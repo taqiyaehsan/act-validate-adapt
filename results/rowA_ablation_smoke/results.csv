@@ -1,0 +1,2 @@
+method,seed,weather,comfort_target,kWh,satisfaction,MO,mean_hvac,base_steps,base_kwh,base_sat,occ_steps,occ_kwh,occ_sat,full_steps,full_kwh,full_sat
+Validated-IntvCoef,42,cold,1.0,26.0,86.77,0.8451,0.167,730,13.9,91.5,175,3.02,76.4,535,9.08,83.7

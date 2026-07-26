@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.4328,0.4328,76,0.2762,1.0,105,29,76,0,29,76,0,42,IID,smart_building_rich,
+0.4328,0.4328,76,0.2762,1.0,105,29,76,0,29,76,0,123,IID,smart_building_rich,
+0.4328,0.4328,76,0.2762,1.0,105,29,76,0,29,76,0,456,IID,smart_building_rich,
+0.4328,0.4328,76,0.2762,1.0,105,29,76,0,29,76,0,789,IID,smart_building_rich,
+0.4328,0.4328,76,0.2762,1.0,105,29,76,0,29,76,0,999,IID,smart_building_rich,

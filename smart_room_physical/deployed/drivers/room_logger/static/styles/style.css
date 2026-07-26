@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    background-color:#333;
+    color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+input, button {
+    font-size: 2rem;
+    padding :1rem;
+    border-radius: 10px;
+}
+
+.button {
+  background: #666;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#open:checked + label {
+  background: green;
+}
+
+#close:checked + label {
+  background: red;
+}
+
+button.submit {
+  margin-top: 1rem;
+}
+
+.occupancy-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.occupancy-section h3 {
+  margin-bottom: 0.75rem;
+}
+
+#occupied_yes:checked + label {
+  background: green;
+}
+
+#occupied_no:checked + label {
+  background: red;
+}

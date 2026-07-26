@@ -1,0 +1,96 @@
+{
+  "dataset": "hidden_vars",
+  "data_path": "data/smart-room-hidden-vars_preprocessed.csv",
+  "columns": [
+    "Temperature",
+    "Humidity",
+    "AirQuality",
+    "EnergyConsumption",
+    "OverallSatisfaction"
+  ],
+  "union_edges": [
+    [
+      "AirQuality",
+      "EnergyConsumption"
+    ],
+    [
+      "AirQuality",
+      "Humidity"
+    ],
+    [
+      "EnergyConsumption",
+      "Temperature"
+    ],
+    [
+      "Humidity",
+      "AirQuality"
+    ],
+    [
+      "Humidity",
+      "OverallSatisfaction"
+    ],
+    [
+      "OverallSatisfaction",
+      "Temperature"
+    ],
+    [
+      "Temperature",
+      "EnergyConsumption"
+    ],
+    [
+      "Temperature",
+      "Humidity"
+    ],
+    [
+      "Temperature",
+      "OverallSatisfaction"
+    ]
+  ],
+  "method_edges": {
+    "PC": [
+      [
+        "AirQuality",
+        "EnergyConsumption"
+      ],
+      [
+        "Humidity",
+        "AirQuality"
+      ],
+      [
+        "Humidity",
+        "OverallSatisfaction"
+      ],
+      [
+        "Temperature",
+        "EnergyConsumption"
+      ],
+      [
+        "Temperature",
+        "Humidity"
+      ],
+      [
+        "Temperature",
+        "OverallSatisfaction"
+      ]
+    ],
+    "SAM": [
+      [
+        "AirQuality",
+        "Humidity"
+      ],
+      [
+        "EnergyConsumption",
+        "Temperature"
+      ],
+      [
+        "Humidity",
+        "OverallSatisfaction"
+      ],
+      [
+        "OverallSatisfaction",
+        "Temperature"
+      ]
+    ]
+  },
+  "n_union": 9
+}

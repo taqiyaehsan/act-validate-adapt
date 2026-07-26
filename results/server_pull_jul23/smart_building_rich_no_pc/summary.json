@@ -1,0 +1,32 @@
+{
+  "sim": "smart_building_rich",
+  "n_seeds": 3,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "discovery": {
+    "f1": "0.346 \u00b1 0.015",
+    "shd": "49.3 \u00b1 3.3",
+    "n_edges": "46.3 \u00b1 3.3",
+    "f1_mean": 0.3458,
+    "f1_std": 0.0147
+  },
+  "monitoring": {
+    "combined": "63.6 \u00b1 7.0",
+    "combined_mean": 63.63,
+    "combined_std": 7.05
+  },
+  "consensus": {
+    "f1": 0.3514,
+    "precision": 0.2889,
+    "recall": 0.4483,
+    "shd": 48,
+    "n_edges": 45,
+    "tp": 13,
+    "fp": 32,
+    "fn": 16
+  },
+  "jaccard": 0.8441
+}

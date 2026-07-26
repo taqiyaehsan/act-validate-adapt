@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} Window</title>
+    <link href="{{url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+
+
+<body>
+    <h1>{{title}} Window</h1>
+
+
+    
+    <form method="POST" action="/handle_button">
+        <button class="button green" name="action" value="open">Window Open</button>
+        <button class="button red" name="action" value="close">Window Closed</button>
+        <button class="button" name="action" value="submit">Submit</button>
+    </form>
+</body>
+</html>

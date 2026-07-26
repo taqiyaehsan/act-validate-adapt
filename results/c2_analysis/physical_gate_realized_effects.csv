@@ -1,0 +1,7 @@
+edge,target,mean_delta,std_delta_trials,realized_d_trial,p_value,power_at_realized_d,validated
+Heater->Temperature,Temperature,0.063847,0.026042,2.45,0.000638,0.9823,True
+Fan->Temperature,Temperature,0.021814,0.011764,1.85,0.002694,0.8549,True
+Heater->Humidity,Humidity,-0.027459,0.017374,1.58,0.005803,0.9307,True
+Humidifier->Humidity,Humidity,0.014599,0.009656,1.51,0.007119,0.9112,True
+Heater->AirQuality,AirQuality,0.015938,0.011349,1.4,0.009906,0.7105,True
+Humidifier->AirQuality,AirQuality,-0.012209,0.009219,1.32,0.012763,0.6541,True

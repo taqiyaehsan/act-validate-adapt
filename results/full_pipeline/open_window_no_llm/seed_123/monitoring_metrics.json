@@ -1,0 +1,9 @@
+{
+  "win_accuracy": 37.5,
+  "win_open_accuracy": 100.0,
+  "win_closed_accuracy": 16.7,
+  "combined_accuracy": 37.5,
+  "n_steps": 240,
+  "n_open": 60,
+  "n_closed": 180
+}

@@ -1,0 +1,110 @@
+{
+  "Temperature": {
+    "parents": [
+      "Heater",
+      "Fan",
+      "Humidity"
+    ],
+    "parent_cols": [
+      "Heater",
+      "Fan",
+      "Humidity"
+    ],
+    "coefs": [
+      -0.204112,
+      -0.018575,
+      -0.487177
+    ],
+    "intercept": 0.977157,
+    "r2": 0.507
+  },
+  "Satisfaction": {
+    "parents": [
+      "Temperature",
+      "Heater",
+      "Fan"
+    ],
+    "parent_cols": [
+      "Temperature",
+      "Heater",
+      "Fan"
+    ],
+    "coefs": [
+      1.273424,
+      0.228338,
+      0.048795
+    ],
+    "intercept": -0.658983,
+    "r2": 0.7611
+  },
+  "WindowState": {
+    "parents": [
+      "AirQuality"
+    ],
+    "parent_cols": [
+      "AirQuality"
+    ],
+    "coefs": [
+      0.522744
+    ],
+    "intercept": -0.105373,
+    "r2": 0.1434
+  },
+  "EnergyConsumption": {
+    "parents": [
+      "Heater",
+      "Fan"
+    ],
+    "parent_cols": [
+      "Heater",
+      "Fan"
+    ],
+    "coefs": [
+      0.893383,
+      0.045175
+    ],
+    "intercept": 0.007412,
+    "r2": 0.9973
+  },
+  "Humidity": {
+    "parents": [
+      "AirQuality",
+      "Heater",
+      "Humidifier",
+      "Temperature"
+    ],
+    "parent_cols": [
+      "AirQuality",
+      "Heater",
+      "Humidifier",
+      "Temperature"
+    ],
+    "coefs": [
+      -0.938717,
+      -0.096766,
+      0.032839,
+      -0.867626
+    ],
+    "intercept": 1.476393,
+    "r2": 0.9194
+  },
+  "AirQuality": {
+    "parents": [
+      "Humidifier",
+      "Humidity",
+      "Heater"
+    ],
+    "parent_cols": [
+      "Humidifier",
+      "Humidity",
+      "Heater"
+    ],
+    "coefs": [
+      -0.084897,
+      -0.468028,
+      0.110266
+    ],
+    "intercept": 0.678105,
+    "r2": 0.6569
+  }
+}

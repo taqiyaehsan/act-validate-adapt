@@ -1,0 +1,29 @@
+{
+  "strategy_a": {
+    "occ_accuracy": 59.7,
+    "win_accuracy": 75.4,
+    "combined_accuracy": 48.6,
+    "brier_occ": 0.2716,
+    "brier_win": 0.2142,
+    "discriminability": 48.6,
+    "n_test_steps": 732
+  },
+  "strategy_b": {
+    "occ_accuracy": 65.6,
+    "win_accuracy": 45.9,
+    "combined_accuracy": 42.1,
+    "brier_occ": 0.2267,
+    "brier_win": 0.2531,
+    "discriminability": 44.0,
+    "n_test_steps": 366
+  },
+  "strategy_c": {
+    "occ_accuracy": 61.2,
+    "win_accuracy": 83.1,
+    "combined_accuracy": 47.3,
+    "brier_occ": 0.2316,
+    "brier_win": 0.2282,
+    "discriminability": 48.4,
+    "n_test_steps": 366
+  }
+}

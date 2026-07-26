@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.5714,0.5714,3,1.0,0.4,2,2,0,3,2,0,3,42,VARLiNGAM,ashrae,
+0.5714,0.5714,3,1.0,0.4,2,2,0,3,2,0,3,123,VARLiNGAM,ashrae,
+0.5714,0.5714,3,1.0,0.4,2,2,0,3,2,0,3,456,VARLiNGAM,ashrae,
+0.5714,0.5714,3,1.0,0.4,2,2,0,3,2,0,3,789,VARLiNGAM,ashrae,
+0.5714,0.5714,3,1.0,0.4,2,2,0,3,2,0,3,999,VARLiNGAM,ashrae,

@@ -1,0 +1,64 @@
+# ── Claude Code ──────────────────────────────────────────────────────────────
+.claude/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+*.so
+
+# ── Virtual environment ──────────────────────────────────────────────────────
+causal_env/
+venv/
+.venv/
+env/
+
+# ── Node.js ──────────────────────────────────────────────────────────────────
+node_modules/
+package-lock.json
+
+# ── IDE / OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Secrets & config ────────────────────────────────────────────────────────
+.env
+*.pkl
+*.pth
+
+# ── EnergyPlus (large local install) ────────────────────────────────────────
+EnergyPlus-*/
+eplus_test_results/
+weather/
+
+# ── Results (most are regenerable; archive/ holds superseded snapshots) ─────
+results/archive/
+
+# ── Logs & caches ────────────────────────────────────────────────────────────
+*.log
+*_cache.json
+
+# ── Non-code assets ──────────────────────────────────────────────────────────
+demo/
+/templates/
+docs/papers/
+*.pdf
+
+# ── Old/legacy directories ───────────────────────────────────────────────────
+src/intermediate_results/
+
+# local verification artifacts
+results/full_pipeline/open_window_no_sam_repro/
+repro_test.log
+results/full_pipeline/open_window_no_sam_repro2/
+
+# never deployed; produced no paper numbers — kept out of the release
+physical_v2/

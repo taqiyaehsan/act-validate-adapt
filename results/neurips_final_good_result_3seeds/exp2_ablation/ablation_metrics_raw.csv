@@ -1,0 +1,181 @@
+method,n_sensors,dropped,occ_accuracy,win_accuracy,combined_accuracy,sim_seed
+PolicyGRID-O,6,none,98.4,75.4,73.8,0
+PolicyGRID-O,5,co2,98.4,75.4,73.8,0
+PolicyGRID-O,4,noisedb,81.1,74.4,58.2,0
+PolicyGRID-O,3,lightlevel,64.8,69.2,59.2,0
+PolicyGRID-O,2,airquality,51.2,71.9,49.6,0
+PolicyGRID-O,1,humidity,50.5,75.4,50.5,0
+PolicyGRID,6,none,99.0,90.3,89.2,0
+PolicyGRID,5,co2,99.0,90.3,89.2,0
+PolicyGRID,4,noisedb,64.3,68.6,35.4,0
+PolicyGRID,3,lightlevel,61.8,49.1,38.8,0
+PolicyGRID,2,airquality,60.1,74.8,49.8,0
+PolicyGRID,1,humidity,47.9,75.4,47.9,0
+PC,6,none,64.5,75.4,51.5,0
+PC,5,co2,64.5,75.4,51.5,0
+PC,4,noisedb,51.6,75.4,51.5,0
+PC,3,lightlevel,51.5,75.4,51.5,0
+PC,2,airquality,51.4,75.4,51.4,0
+PC,1,humidity,51.4,75.4,51.4,0
+GIES,6,none,64.5,75.4,51.5,0
+GIES,5,co2,64.5,75.4,51.5,0
+GIES,4,noisedb,51.6,75.4,51.5,0
+GIES,3,lightlevel,51.5,75.4,51.5,0
+GIES,2,airquality,51.4,75.4,51.4,0
+GIES,1,humidity,51.4,75.4,51.4,0
+ICP,6,none,97.6,69.3,68.5,0
+ICP,5,co2,97.6,69.3,68.5,0
+ICP,4,noisedb,78.6,69.1,60.3,0
+ICP,3,lightlevel,76.9,69.7,63.2,0
+ICP,2,airquality,77.3,73.9,65.0,0
+ICP,1,humidity,77.3,73.9,65.0,0
+NOTEARS-I,6,none,64.7,75.4,51.5,0
+NOTEARS-I,5,co2,63.1,75.4,51.5,0
+NOTEARS-I,4,noisedb,51.5,75.2,51.2,0
+NOTEARS-I,3,lightlevel,51.5,75.2,51.3,0
+NOTEARS-I,2,airquality,51.5,75.4,51.5,0
+NOTEARS-I,1,humidity,51.4,75.4,51.4,0
+ABCD,6,none,60.0,75.4,51.5,0
+ABCD,5,co2,54.6,75.4,51.5,0
+ABCD,4,noisedb,52.1,75.4,51.5,0
+ABCD,3,lightlevel,51.5,75.4,51.5,0
+ABCD,2,airquality,53.2,75.4,52.3,0
+ABCD,1,humidity,51.4,75.4,51.4,0
+JCI,6,none,65.9,75.4,52.3,0
+JCI,5,co2,65.9,75.4,52.3,0
+JCI,4,noisedb,51.8,75.4,51.5,0
+JCI,3,lightlevel,51.5,75.4,51.5,0
+JCI,2,airquality,51.5,75.4,51.5,0
+JCI,1,humidity,51.4,75.4,51.4,0
+Causal Bandits,6,none,73.6,75.4,50.3,0
+Causal Bandits,5,co2,73.6,75.4,50.3,0
+Causal Bandits,4,noisedb,73.6,75.4,50.3,0
+Causal Bandits,3,lightlevel,70.3,79.2,56.1,0
+Causal Bandits,2,airquality,57.6,78.2,50.9,0
+Causal Bandits,1,humidity,57.6,78.2,50.9,0
+IID,6,none,99.5,76.1,75.7,0
+IID,5,co2,99.5,76.1,75.7,0
+IID,4,noisedb,79.8,71.5,62.4,0
+IID,3,lightlevel,79.8,71.5,62.4,0
+IID,2,airquality,48.5,24.6,51.5,0
+IID,1,humidity,48.5,24.6,51.5,0
+PolicyGRID-O,6,none,99.0,76.0,75.0,1
+PolicyGRID-O,5,co2,99.0,76.0,75.0,1
+PolicyGRID-O,4,noisedb,79.4,75.7,57.3,1
+PolicyGRID-O,3,lightlevel,64.4,69.7,60.3,1
+PolicyGRID-O,2,airquality,51.0,72.5,49.5,1
+PolicyGRID-O,1,humidity,50.3,76.0,50.3,1
+PolicyGRID,6,none,99.2,91.1,90.3,1
+PolicyGRID,5,co2,99.2,91.1,90.3,1
+PolicyGRID,4,noisedb,66.1,70.6,38.1,1
+PolicyGRID,3,lightlevel,65.1,50.4,38.3,1
+PolicyGRID,2,airquality,60.4,75.7,49.9,1
+PolicyGRID,1,humidity,46.9,76.0,46.9,1
+PC,6,none,64.2,76.0,51.5,1
+PC,5,co2,64.2,76.0,51.5,1
+PC,4,noisedb,51.7,76.0,51.5,1
+PC,3,lightlevel,51.5,76.0,51.5,1
+PC,2,airquality,51.5,76.0,51.5,1
+PC,1,humidity,51.5,76.0,51.5,1
+GIES,6,none,64.2,76.0,51.5,1
+GIES,5,co2,64.2,76.0,51.5,1
+GIES,4,noisedb,51.7,76.0,51.5,1
+GIES,3,lightlevel,51.5,76.0,51.5,1
+GIES,2,airquality,51.5,76.0,51.5,1
+GIES,1,humidity,51.5,76.0,51.5,1
+ICP,6,none,97.4,68.4,67.7,1
+ICP,5,co2,97.4,68.4,67.7,1
+ICP,4,noisedb,77.9,69.4,60.4,1
+ICP,3,lightlevel,76.8,69.9,63.5,1
+ICP,2,airquality,77.5,74.5,66.0,1
+ICP,1,humidity,77.5,74.5,66.0,1
+NOTEARS-I,6,none,64.1,76.0,51.5,1
+NOTEARS-I,5,co2,62.7,76.0,51.5,1
+NOTEARS-I,4,noisedb,51.5,75.6,51.1,1
+NOTEARS-I,3,lightlevel,51.5,75.5,51.0,1
+NOTEARS-I,2,airquality,51.4,76.0,51.4,1
+NOTEARS-I,1,humidity,51.5,76.0,51.5,1
+ABCD,6,none,59.4,76.0,51.5,1
+ABCD,5,co2,54.0,76.0,51.5,1
+ABCD,4,noisedb,52.5,75.8,51.3,1
+ABCD,3,lightlevel,51.5,76.0,51.5,1
+ABCD,2,airquality,52.8,76.0,51.7,1
+ABCD,1,humidity,51.5,76.0,51.5,1
+JCI,6,none,64.2,76.0,51.6,1
+JCI,5,co2,64.2,76.0,51.6,1
+JCI,4,noisedb,51.7,76.0,51.5,1
+JCI,3,lightlevel,51.5,76.0,51.5,1
+JCI,2,airquality,51.5,76.0,51.5,1
+JCI,1,humidity,51.5,76.0,51.5,1
+Causal Bandits,6,none,72.7,76.0,50.6,1
+Causal Bandits,5,co2,72.7,76.0,50.6,1
+Causal Bandits,4,noisedb,72.7,76.0,50.6,1
+Causal Bandits,3,lightlevel,70.4,79.4,56.1,1
+Causal Bandits,2,airquality,57.8,78.3,50.7,1
+Causal Bandits,1,humidity,57.8,78.3,50.7,1
+IID,6,none,99.2,74.4,73.7,1
+IID,5,co2,99.2,74.4,73.7,1
+IID,4,noisedb,80.7,69.8,61.0,1
+IID,3,lightlevel,80.7,69.8,61.0,1
+IID,2,airquality,48.5,24.0,51.5,1
+IID,1,humidity,48.5,24.0,51.5,1
+PolicyGRID-O,6,none,98.5,75.4,74.0,2
+PolicyGRID-O,5,co2,98.5,75.4,74.0,2
+PolicyGRID-O,4,noisedb,79.8,74.7,56.9,2
+PolicyGRID-O,3,lightlevel,65.6,70.3,61.0,2
+PolicyGRID-O,2,airquality,51.6,72.3,49.4,2
+PolicyGRID-O,1,humidity,51.0,75.4,51.0,2
+PolicyGRID,6,none,99.2,91.3,90.4,2
+PolicyGRID,5,co2,99.2,91.3,90.4,2
+PolicyGRID,4,noisedb,64.0,69.9,35.2,2
+PolicyGRID,3,lightlevel,62.9,50.0,38.0,2
+PolicyGRID,2,airquality,57.5,75.2,47.1,2
+PolicyGRID,1,humidity,47.1,75.4,47.1,2
+PC,6,none,64.4,75.4,51.3,2
+PC,5,co2,64.4,75.4,51.3,2
+PC,4,noisedb,51.3,75.4,51.3,2
+PC,3,lightlevel,51.3,75.4,51.3,2
+PC,2,airquality,51.3,75.4,51.3,2
+PC,1,humidity,51.3,75.4,51.3,2
+GIES,6,none,64.4,75.4,51.3,2
+GIES,5,co2,64.4,75.4,51.3,2
+GIES,4,noisedb,51.3,75.4,51.3,2
+GIES,3,lightlevel,51.3,75.4,51.3,2
+GIES,2,airquality,51.3,75.4,51.3,2
+GIES,1,humidity,51.3,75.4,51.3,2
+ICP,6,none,97.9,68.9,68.2,2
+ICP,5,co2,97.9,68.9,68.2,2
+ICP,4,noisedb,78.1,69.9,61.1,2
+ICP,3,lightlevel,76.6,70.3,63.8,2
+ICP,2,airquality,77.9,73.8,65.5,2
+ICP,1,humidity,77.9,73.8,65.5,2
+NOTEARS-I,6,none,64.1,75.4,51.3,2
+NOTEARS-I,5,co2,62.9,75.4,51.3,2
+NOTEARS-I,4,noisedb,51.3,75.3,51.1,2
+NOTEARS-I,3,lightlevel,51.3,75.2,51.0,2
+NOTEARS-I,2,airquality,51.1,75.4,51.1,2
+NOTEARS-I,1,humidity,51.3,75.4,51.3,2
+ABCD,6,none,57.5,75.4,51.3,2
+ABCD,5,co2,52.7,75.4,51.3,2
+ABCD,4,noisedb,52.0,74.8,50.7,2
+ABCD,3,lightlevel,51.3,75.4,51.3,2
+ABCD,2,airquality,52.1,75.4,52.0,2
+ABCD,1,humidity,51.3,75.4,51.3,2
+JCI,6,none,65.6,75.4,52.0,2
+JCI,5,co2,65.6,75.4,52.0,2
+JCI,4,noisedb,51.7,75.4,51.3,2
+JCI,3,lightlevel,51.3,75.4,51.3,2
+JCI,2,airquality,51.3,75.4,51.3,2
+JCI,1,humidity,51.3,75.4,51.3,2
+Causal Bandits,6,none,73.9,75.4,50.9,2
+Causal Bandits,5,co2,73.9,75.4,50.9,2
+Causal Bandits,4,noisedb,73.9,75.4,50.9,2
+Causal Bandits,3,lightlevel,71.0,77.4,54.8,2
+Causal Bandits,2,airquality,57.1,78.6,50.7,2
+Causal Bandits,1,humidity,57.1,78.6,50.7,2
+IID,6,none,99.3,75.5,74.8,2
+IID,5,co2,99.3,75.5,74.8,2
+IID,4,noisedb,81.2,68.1,59.8,2
+IID,3,lightlevel,81.2,68.1,59.8,2
+IID,2,airquality,48.7,24.6,51.3,2
+IID,1,humidity,48.7,24.6,51.3,2

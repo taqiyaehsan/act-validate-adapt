@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.0901,0.4144,101,0.061,0.1724,82,5,77,24,23,59,6,42,GIES,smart_building_rich,
+0.4255,0.5106,54,0.3077,0.6897,65,20,45,9,24,41,5,123,GIES,smart_building_rich,
+0.1414,0.4444,85,0.1,0.2414,70,7,63,22,22,48,7,456,GIES,smart_building_rich,
+0.3404,0.5106,62,0.2462,0.5517,65,16,49,13,24,41,5,789,GIES,smart_building_rich,
+0.3,0.46,70,0.2113,0.5172,71,15,56,14,23,48,6,999,GIES,smart_building_rich,

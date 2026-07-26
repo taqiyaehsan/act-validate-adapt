@@ -1,0 +1,9 @@
+edge_set,objective,actuator,mean_grad,dominant_sign,sign_consistency,expected_sign,verdict,n_samples
+validated,energy,HVACPower,-0.99958,neg,1.0,neg,PASS,1500
+validated,energy,LightingPower,0.0,zero,1.0,neg,no-direct-edge,1500
+validated,satisfaction,HVACPower,0.0,zero,1.0,,,1500
+validated,satisfaction,LightingPower,0.0,zero,1.0,,,1500
+obs_only,energy,HVACPower,-0.938348,neg,1.0,neg,PASS,1500
+obs_only,energy,LightingPower,-4e-06,neg,0.9487,neg,PASS-weak,1500
+obs_only,satisfaction,HVACPower,0.0,zero,1.0,,,1500
+obs_only,satisfaction,LightingPower,0.0,zero,1.0,,,1500

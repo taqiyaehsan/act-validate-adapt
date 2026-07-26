@@ -1,0 +1,14 @@
+{
+  "nodes": ["Temperature", "Humidity", "AirQuality", "EnergyConsumption", "Satisfaction"],
+  "edges": [
+    ["Temperature", "Humidity"],
+    ["Temperature", "AirQuality"],
+    ["Temperature", "EnergyConsumption"],
+    ["Temperature", "Satisfaction"],
+    ["Humidity", "AirQuality"],
+    ["Humidity", "EnergyConsumption"],
+    ["AirQuality", "EnergyConsumption"],
+    ["EnergyConsumption", "Satisfaction"]
+  ],
+  "_source": "Recovered from logs/smart_room.log (Apr 4 2026 full_pipeline run); LLM output is deterministic/data-independent. Reused for hidden_vars per identical prompt + user confirmation. Delete this dir to resume live GPT API calls."
+}

@@ -1,0 +1,132 @@
+{
+  "source": "results/archive/3runs_cwm_mar7_good_open_window",
+  "date": "2026-03-07",
+  "seeds": [
+    42,
+    43
+  ],
+  "n_edges": 14,
+  "f1": 0.55,
+  "precision": 0.47,
+  "recall": 0.67,
+  "shd": 11,
+  "validated_edges": [
+    [
+      "airquality",
+      "energyconsumption"
+    ],
+    [
+      "airquality",
+      "satisfaction"
+    ],
+    [
+      "humidity",
+      "airquality"
+    ],
+    [
+      "pmv",
+      "energyconsumption"
+    ],
+    [
+      "pmv",
+      "satisfaction"
+    ],
+    [
+      "temperature",
+      "airquality"
+    ],
+    [
+      "temperature",
+      "energyconsumption"
+    ],
+    [
+      "temperature",
+      "humidity"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "windowopen",
+      "airquality"
+    ],
+    [
+      "windowopen",
+      "energyconsumption"
+    ],
+    [
+      "windowopen",
+      "humidity"
+    ],
+    [
+      "windowopen",
+      "temperature"
+    ]
+  ],
+  "intervention_validated": [
+    [
+      "humidity",
+      "airquality"
+    ],
+    [
+      "airquality",
+      "satisfaction"
+    ],
+    [
+      "airquality",
+      "energyconsumption"
+    ],
+    [
+      "temperature",
+      "airquality"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "temperature",
+      "humidity"
+    ],
+    [
+      "temperature",
+      "energyconsumption"
+    ]
+  ],
+  "rescued": [
+    [
+      "pmv",
+      "satisfaction"
+    ],
+    [
+      "pmv",
+      "energyconsumption"
+    ],
+    [
+      "windowopen",
+      "temperature"
+    ],
+    [
+      "windowopen",
+      "humidity"
+    ],
+    [
+      "windowopen",
+      "energyconsumption"
+    ],
+    [
+      "windowopen",
+      "airquality"
+    ]
+  ],
+  "note": "Discovered on open_window_sim_data.csv (41% window-open). Includes 4 windowopen GT edges via Phase 2.4 rescue."
+}

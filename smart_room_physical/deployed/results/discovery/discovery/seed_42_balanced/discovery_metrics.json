@@ -1,0 +1,11 @@
+{
+  "n_validated": 16,
+  "n_rescued": 8,
+  "n_total": 19,
+  "gt_f1": 0.364,
+  "gt_precision": 0.316,
+  "gt_recall": 0.429,
+  "gt_shd": 21,
+  "balanced": true,
+  "training_rows": 3166
+}

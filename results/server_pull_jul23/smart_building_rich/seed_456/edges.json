@@ -1,0 +1,146 @@
+{
+  "seed": 456,
+  "validated_edges": [
+    [
+      "solarradiation",
+      "occupancy"
+    ],
+    [
+      "outdoortemp",
+      "airquality"
+    ],
+    [
+      "windowposition",
+      "pmv"
+    ],
+    [
+      "occupancy",
+      "co2"
+    ],
+    [
+      "hvacpower",
+      "energyconsumption"
+    ],
+    [
+      "HVACPower",
+      "AirQuality"
+    ],
+    [
+      "solarradiation",
+      "temperature"
+    ],
+    [
+      "windowposition",
+      "airquality"
+    ],
+    [
+      "outdoortemp",
+      "noisedb"
+    ],
+    [
+      "outdoortemp",
+      "satisfaction"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "outdoortemp",
+      "solarradiation"
+    ],
+    [
+      "satisfaction",
+      "airquality"
+    ],
+    [
+      "outdoortemp",
+      "temperature"
+    ],
+    [
+      "solarradiation",
+      "pmv"
+    ],
+    [
+      "outdoortemp",
+      "co2"
+    ],
+    [
+      "occupancy",
+      "pmv"
+    ],
+    [
+      "pmv",
+      "solarradiation"
+    ],
+    [
+      "outdoortemp",
+      "humidity"
+    ],
+    [
+      "windowposition",
+      "solarradiation"
+    ],
+    [
+      "satisfaction",
+      "outdoortemp"
+    ],
+    [
+      "solarradiation",
+      "windowposition"
+    ],
+    [
+      "occupancy",
+      "windowposition"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "lightingpower",
+      "lightlevel"
+    ],
+    [
+      "windowposition",
+      "co2"
+    ],
+    [
+      "windowposition",
+      "temperature"
+    ],
+    [
+      "co2",
+      "satisfaction"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "occupancy",
+      "noisedb"
+    ],
+    [
+      "occupancy",
+      "lightlevel"
+    ],
+    [
+      "outdoortemp",
+      "pmv"
+    ],
+    [
+      "solarradiation",
+      "lightlevel"
+    ]
+  ],
+  "f1": 0.3871,
+  "precision": 0.3636,
+  "recall": 0.4138,
+  "shd": 38,
+  "n_edges": 33,
+  "tp": 12,
+  "fp": 21,
+  "fn": 17,
+  "time_s": 12033.0
+}

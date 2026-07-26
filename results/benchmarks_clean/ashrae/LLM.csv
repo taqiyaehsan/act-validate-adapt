@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.3077,0.4615,9,0.25,0.4,8,2,6,3,3,5,2,42,LLM,ashrae,
+0.5455,0.5455,5,0.5,0.6,6,3,3,2,3,3,2,123,LLM,ashrae,
+0.5,0.5,6,0.4286,0.6,7,3,4,2,3,4,2,456,LLM,ashrae,
+0.5455,0.5455,5,0.5,0.6,6,3,3,2,3,3,2,789,LLM,ashrae,
+0.2857,0.4615,10,0.2222,0.4,9,2,7,3,3,5,2,999,LLM,ashrae,

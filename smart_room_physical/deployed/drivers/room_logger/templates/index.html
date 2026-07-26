@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Logging App</title>
+    <link href="{{url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+
+
+
+<body>
+    <h1>Window Logging App</h1>
+
+    <!--Current status section-->
+
+    <section id="status">
+      <!--shows latest window state-->
+        <h2>Current Status</h2>
+        <div class="status">
+            <div>
+              <strong>State:</strong>
+              <span>
+                {{current_state_text}}
+                <!-- open, closed, or unknwon-->
+              </span>
+            </div>
+
+            <div>
+              <strong>Last update (UTC):</strong>
+              <span>
+                {{ current_state_time }} 
+                <!--time stamp-->
+              </span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- LOGGING FORM -->
+<form id="logForm" method="POST" action="/log_window">
+  <div class="button-group">
+    <input type="radio" id="open" name="window_state" value="1" hidden required>
+    <label for="open" class="button">Window Open</label>
+
+    <input type="radio" id="close" name="window_state" value="0" hidden>
+    <label for="close" class="button">Window Closed</label>
+  </div>
+
+<div class="occupancy-section">
+    <h3>Occupancy</h3>
+    <div class="button-group">
+      <input type="radio" id="occupied_yes" name="occupancy" value="1" hidden required>
+      <label for="occupied_yes" class="button">Yes</label>
+
+      <input type="radio" id="occupied_no" name="occupancy" value="0" hidden>
+      <label for="occupied_no" class="button">No</label>
+      
+    </div>
+  </div>
+
+  <input
+    id="notes"
+    name="notes"
+    type="text"
+    maxlength="200"
+    placeholder="Optional note (e.g., left slightly ajar)"
+    style="width: min(600px, 92vw);"
+  />
+
+  <button id="submitBtn" class="button submit" type="submit">Log Event</button>
+
+  {% if message %}
+    <div class="banner {{ 'ok' if ok else 'err' }}">{{ message }}</div>
+  {% endif %}
+</form>
+
+
+
+  
+
+
+  <!-- History Section -->
+
+  <section id="history">
+  <!-- shows last 20 events -->
+    <h2>Recent History</h2>
+    <div class="history">
+      {% for row in history %}
+        <!-- loop through last 20 rows passed from flask -->
+        
+        <div class="row">
+          <!-- history entry -->
+          <div class="ts">
+            {{ row.timestamp }}
+          </div>
+
+          <div class="st">
+            {{ 'OPEN' if (row.window_state|int) == 1 else 'CLOSED' }}
+
+          </div>
+
+          <div class="oc">
+            {{ 'OCCUPIED' if (row.occupancy|int) == 1 else 'UNOCCUPIED' }}
+            </div>
+
+          <div class="nt">
+            {{ row.notes }}
+          </div>
+          <!-- Optional notes -->
+
+        </div>
+
+      {% endfor %}
+
+      {% if history|length == 0 %}
+        <!-- ff no entries exist yet -->
+
+        <div class="row">
+          No entries yet.
+        </div>
+
+      {% endif %}
+
+    </div>
+  </section>
+
+
+
+
+  <!-- double-tap protection -->
+
+
+  <script>
+    // get form element
+    const form = document.getElementById('logForm');
+
+    // get submit button
+    const btn = document.getElementById('submitBtn');
+
+    // track whether submission already started
+    let locked = false;
+
+    form.addEventListener('submit', (e) => {
+
+      if (locked) {
+        // prevent second submission!!
+        e.preventDefault();
+        return;}
+
+      locked = true; // lock further submissions
+
+      btn.disabled = true; // disable button
+      btn.textContent = 'Logging...'; // visual feedback
+
+    });
+  </script>
+
+</body>
+</html>

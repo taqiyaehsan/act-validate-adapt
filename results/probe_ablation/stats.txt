@@ -1,0 +1,12 @@
+════════════════════════════════════════════════════════════════════════
+ACTIVE-vs-PASSIVE PROBING AT REGIME TRANSITIONS (paired episodes)
+pre=200 post=400 steps; replicates=1; frozen validated edges
+════════════════════════════════════════════════════════════════════════
+
+── σ=2.0, η=0.12 ──
+  base>full  (probes/eps active: pre=1.0 post=0.0)
+    joint_lockin_delay     active   269.0  passive   269.0  Δ(a−p)    +0.0  per-rep Δ [0.0]
+    occ_lockin_delay       active     3.0  passive     3.0  Δ(a−p)    +0.0  per-rep Δ [0.0]
+    win_lockin_delay       active   269.0  passive   269.0  Δ(a−p)    +0.0  per-rep Δ [0.0]
+    joint_argmax_delay     active    11.0  passive    11.0  Δ(a−p)    +0.0  per-rep Δ [0.0]
+    post_shift_acc         active    31.0  passive    31.0  Δ(a−p)    +0.0  per-rep Δ [0.0]

@@ -1,0 +1,434 @@
+{
+  "Humidifier->Heater": {
+    "validated": false,
+    "reason": "insufficient_measurements",
+    "n_tests": 0,
+    "mean_delta": 0
+  },
+  "Humidifier->Fan": {
+    "validated": false,
+    "reason": "insufficient_measurements",
+    "n_tests": 0,
+    "mean_delta": 0
+  },
+  "Humidifier->Temperature": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.00133,
+    "threshold": 0.01
+  },
+  "Humidifier->Humidity": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.014599,
+    "std_delta": 0.009656,
+    "t_stat": 4.0,
+    "p_value": 0.007119,
+    "effect_sizes": [
+      0.025547,
+      0.021898,
+      0.021898,
+      0.007299,
+      0.018248,
+      -0.0,
+      0.007299
+    ],
+    "partial_r": -0.0308,
+    "regression_p": 0.163118,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Humidifier->AirQuality": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": -0.012209,
+    "std_delta": 0.009219,
+    "t_stat": -3.5041,
+    "p_value": 0.012763,
+    "effect_sizes": [
+      -0.030194,
+      -0.0174,
+      -0.006141,
+      -0.008188,
+      -0.003582,
+      -0.006653,
+      -0.013306
+    ],
+    "partial_r": -0.2004,
+    "regression_p": 0.0,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Humidifier->EnergyConsumption": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.000784,
+    "threshold": 0.005
+  },
+  "Humidifier->Satisfaction": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.00381,
+    "threshold": 0.01
+  },
+  "Humidifier->Occupancy": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.0,
+    "threshold": 0.05
+  },
+  "Humidifier->WindowState": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.0,
+    "threshold": 0.05
+  },
+  "Heater->Humidifier": {
+    "validated": false,
+    "reason": "insufficient_measurements",
+    "n_tests": 0,
+    "mean_delta": 0
+  },
+  "Heater->Fan": {
+    "validated": false,
+    "reason": "insufficient_measurements",
+    "n_tests": 0,
+    "mean_delta": 0
+  },
+  "Heater->Temperature": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.063847,
+    "std_delta": 0.026042,
+    "t_stat": 6.4865,
+    "p_value": 0.000638,
+    "effect_sizes": [
+      0.117318,
+      0.07635,
+      0.055866,
+      0.054004,
+      0.050279,
+      0.054004,
+      0.039106
+    ],
+    "partial_r": 0.1453,
+    "regression_p": 0.0,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Heater->Humidity": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": -0.027459,
+    "std_delta": 0.017374,
+    "t_stat": -4.1816,
+    "p_value": 0.005803,
+    "effect_sizes": [
+      -0.059611,
+      -0.03163,
+      -0.029197,
+      -0.013382,
+      -0.017032,
+      -0.034063,
+      -0.007299
+    ],
+    "partial_r": 0.0079,
+    "regression_p": 0.721932,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Heater->AirQuality": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.015938,
+    "std_delta": 0.011349,
+    "t_stat": 3.7154,
+    "p_value": 0.009906,
+    "effect_sizes": [
+      0.021494,
+      0.034289,
+      0.018424,
+      0.012794,
+      0.016888,
+      0.010747,
+      -0.003071
+    ],
+    "partial_r": -0.0031,
+    "regression_p": 0.888507,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Heater->EnergyConsumption": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.634714,
+    "std_delta": 0.433594,
+    "t_stat": 3.873,
+    "p_value": 0.008237,
+    "effect_sizes": [
+      0.89024,
+      0.889744,
+      0.88877,
+      0.887396,
+      0.886851,
+      -0.0,
+      -0.0
+    ],
+    "partial_r": 0.998,
+    "regression_p": 0.0,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Heater->Satisfaction": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.176054,
+    "std_delta": 0.072616,
+    "t_stat": 6.4145,
+    "p_value": 0.000677,
+    "effect_sizes": [
+      0.325714,
+      0.210159,
+      0.154286,
+      0.146667,
+      0.137778,
+      0.149206,
+      0.108571
+    ],
+    "partial_r": -0.067,
+    "regression_p": 0.002335,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Heater->Occupancy": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.0,
+    "threshold": 0.05
+  },
+  "Heater->WindowState": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.0,
+    "threshold": 0.05
+  },
+  "Fan->Heater": {
+    "validated": false,
+    "reason": "insufficient_measurements",
+    "n_tests": 0,
+    "mean_delta": 0
+  },
+  "Fan->Humidifier": {
+    "validated": false,
+    "reason": "insufficient_measurements",
+    "n_tests": 0,
+    "mean_delta": 0
+  },
+  "Fan->Temperature": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.021814,
+    "std_delta": 0.011764,
+    "t_stat": 4.9063,
+    "p_value": 0.002694,
+    "effect_sizes": [
+      0.013035,
+      0.01676,
+      0.011173,
+      0.03352,
+      0.018622,
+      0.042831,
+      0.01676
+    ],
+    "partial_r": 0.1753,
+    "regression_p": 0.0,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Fan->Humidity": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": -0.002433,
+    "threshold": 0.01
+  },
+  "Fan->AirQuality": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": -0.006287,
+    "threshold": 0.01
+  },
+  "Fan->EnergyConsumption": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.029346,
+    "std_delta": 0.020047,
+    "t_stat": 3.873,
+    "p_value": 0.008237,
+    "effect_sizes": [
+      0.041128,
+      0.041056,
+      0.041072,
+      0.041165,
+      0.041004,
+      -0.0,
+      -0.0
+    ],
+    "partial_r": 0.506,
+    "regression_p": 0.0,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Fan->Satisfaction": {
+    "validated": true,
+    "phase": "confirmatory",
+    "n_tests": 7,
+    "mean_delta": 0.06059,
+    "std_delta": 0.032608,
+    "t_stat": 4.9161,
+    "p_value": 0.002667,
+    "effect_sizes": [
+      0.035556,
+      0.045714,
+      0.032381,
+      0.093333,
+      0.052698,
+      0.11873,
+      0.045714
+    ],
+    "partial_r": 0.1654,
+    "regression_p": 0.0,
+    "method": "intervention+regression",
+    "fdr_status": "fdr_accepted"
+  },
+  "Fan->Occupancy": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.0,
+    "threshold": 0.05
+  },
+  "Fan->WindowState": {
+    "validated": false,
+    "phase": "screening",
+    "reason": "below_threshold",
+    "n_tests": 7,
+    "mean_delta": 0.0,
+    "threshold": 0.05
+  },
+  "Temperature->Humidity": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.5903,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.062,
+    "threshold": 0.058
+  },
+  "Humidity->Temperature": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.5903,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.077,
+    "threshold": 0.058
+  },
+  "AirQuality->Satisfaction": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.0729,
+    "partial_p": 0.000913,
+    "weighted_consensus": 0.062,
+    "threshold": 0.058
+  },
+  "Occupancy->WindowState": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.3232,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.062,
+    "threshold": 0.058
+  },
+  "Temperature->AirQuality": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.2689,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.098,
+    "threshold": 0.058
+  },
+  "AirQuality->Humidity": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.8996,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.113,
+    "threshold": 0.058
+  },
+  "Temperature->WindowState": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.2951,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.098,
+    "threshold": 0.058
+  },
+  "AirQuality->WindowState": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.6746,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.098,
+    "threshold": 0.058
+  },
+  "Humidity->Satisfaction": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.2793,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.098,
+    "threshold": 0.058
+  },
+  "Humidity->AirQuality": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.8996,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.175,
+    "threshold": 0.058
+  },
+  "Temperature->Satisfaction": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.6657,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.175,
+    "threshold": 0.058
+  }
+}

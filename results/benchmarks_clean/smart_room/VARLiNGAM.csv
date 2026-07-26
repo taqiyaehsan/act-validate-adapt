@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.1429,0.5714,12,0.125,0.1667,8,1,7,5,4,4,2,42,VARLiNGAM,smart_room,
+0.1429,0.5714,12,0.125,0.1667,8,1,7,5,4,4,2,123,VARLiNGAM,smart_room,
+0.3077,0.6154,9,0.2857,0.3333,7,2,5,4,4,3,2,456,VARLiNGAM,smart_room,
+0.1538,0.4615,11,0.1429,0.1667,7,1,6,5,3,4,3,789,VARLiNGAM,smart_room,
+0.1429,0.5714,12,0.125,0.1667,8,1,7,5,4,4,2,999,VARLiNGAM,smart_room,

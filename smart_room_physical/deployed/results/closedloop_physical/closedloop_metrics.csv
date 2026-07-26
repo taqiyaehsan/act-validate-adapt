@@ -1,0 +1,5 @@
+method,base_steps,base_sat,base_energy_w,occ_steps,occ_sat,occ_energy_w,win_steps,win_sat,win_energy_w,full_steps,full_sat,full_energy_w,total_sat,total_energy_wh
+Validated_eps1.0,15,15.6,0.0,5,18.9,0.0,5.0,16.5,0.0,5,17.9,0.0,16.7,0.0
+Obs-Only_eps1.0,14,15.4,0.0,6,16.8,0.0,5.0,14.6,0.0,5,17.3,0.0,15.9,0.0
+PID,14,18.1,0.0,6,18.9,0.0,5.0,20.6,0.0,5,19.6,0.0,18.9,0.0
+All-OFF,18,23.5,0.0,7,22.5,0.0,,,,5,23.7,0.0,23.3,0.0

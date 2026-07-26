@@ -1,0 +1,118 @@
+======================================================================
+POST-HOC ANALYSES — PolicyGRID NeurIPS Submission
+======================================================================
+
+
+ANALYSIS 1: GT Edge Recovery
+----------------------------------------
+  PolicyGRID-O             : 19/28 GT edges recovered
+  PolicyGRID               : 17/28 GT edges recovered
+  PC                       : 10/28 GT edges recovered
+  SAM                      : 0/28 GT edges recovered
+  GIES                     : 9/28 GT edges recovered
+  ICP                      : 8/28 GT edges recovered
+  NOTEARS-I                : 13/28 GT edges recovered
+  ABCD                     : 23/28 GT edges recovered
+  JCI                      : 10/28 GT edges recovered
+  Causal Bandits           : 9/28 GT edges recovered
+  IID                      : 4/28 GT edges recovered
+
+  GT edges found by NO method: 0
+
+  GT edges found ONLY by PolicyGRID (validated): 1
+    hvacpower → temperature
+
+
+ANALYSIS 2: Prediction Error Discriminability
+----------------------------------------
+  Method                       Occ Gap   Occ Win%    Win Gap   Win Win%
+  PolicyGRID                    0.8865      98.8%     0.9911      89.1%
+  PolicyGRID-O                  0.7693      99.0%     1.0122      74.4%
+  PC                            0.6210      64.7%     3.3211      75.3%
+  GIES                          0.6210      64.7%     3.3211      75.3%
+  ICP                           0.6876      97.7%     0.2158      68.3%
+  Causal Bandits                0.6841      96.3%     0.8090      75.0%
+
+
+ANALYSIS 3: Coefficient Gap (Regime Sensitivity)
+----------------------------------------
+  Validated vs Rejected: Validated mean=2.5473, Rejected mean=2.1209, U=910, p=0.1448
+  In GT vs Not in GT: In GT mean=0.8385, Not in GT mean=2.6449, U=414, p=0.7304
+
+
+ANALYSIS 4: Seed Stability
+----------------------------------------
+  Validated edge counts across seeds:
+    In all 3 seeds: 44
+    In 2 seeds:     7
+    In 1 seed only: 10
+  Consensus (majority ≥2): 51 edges
+  GT edges in consensus: 17/28
+
+
+ANALYSIS 5: Confusion Matrix (PolicyGRID)
+----------------------------------------
+  True=base : 2202/2232 correct (98.7%)
+    Errors: occ=30
+  True=occ  : 606/1021 correct (59.4%)
+    Errors: base=38, full=377
+  True=win  : 0/0 correct (nan%)
+  True=full : 962/1067 correct (90.2%)
+    Errors: occ=105
+
+
+ANALYSIS 6: Calibration
+----------------------------------------
+  PolicyGRID Brier score (occ): 0.0163
+  PolicyGRID Brier score (win): 0.0865
+  (Lower is better. Random baseline = 0.25)
+
+
+ANALYSIS 7: Temporal Accuracy
+----------------------------------------
+  Near transitions (±10 steps): 55.5%
+  Stable periods:               89.9%
+  Per regime:
+    base : 98.7% (n=2232)
+    full : 90.2% (n=1067)
+    occ  : 59.4% (n=1021)
+
+
+ANALYSIS 8: Benchmark Edge Overlap
+----------------------------------------
+  Method                Total   ∩ GT  ∩ Val  Unique wrong
+  PC                       24     10     18             5
+  GIES                     22      9     16             5
+  ICP                      21      8     15             6
+  NOTEARS-I                73     13     20            48
+  ABCD                    105     23     26            69
+  JCI                      27     10     18             8
+  Causal Bandits           26      9     17             8
+  IID                       8      4      6             2
+
+
+ANALYSIS 9: Policy Variance (ε=0.8)
+----------------------------------------
+  Method                MO mean   MO std    MO CV  kWh mean  DH mean
+  PolicyGRID-O            0.905    0.007    0.007     1.464    0.203
+  PolicyGRID              0.847    0.001    0.001     1.284    0.085
+  PolicyGRID-R            0.915    0.009    0.010     0.786    0.551
+  DDPC_Behavioral         0.914    0.013    0.014     0.647    0.576
+  DDPC_Subspace           0.885    0.025    0.028     0.426    1.832
+  DDPC_Neural             0.878    0.001    0.001     0.734    0.007
+  PID                     0.882    0.004    0.004     1.741    0.019
+
+
+ANALYSIS 10: Critical Sensor per Method
+----------------------------------------
+  Method                        co2      noisedb   lightlevel   airquality     humidity
+  PolicyGRID-O                  0.0         16.8         -2.7         10.7         -1.1
+  PolicyGRID                    0.0         53.8         -2.2        -10.5          1.6
+  PC                            0.0          0.0          0.0          0.0          0.0
+  GIES                          0.0          0.0          0.0          0.0          0.0
+  ICP                           0.0          7.5         -2.9         -2.0          0.0
+  NOTEARS-I                     0.0          0.3          0.0         -0.2         -0.1
+  ABCD                          0.0          0.2         -0.2         -0.6          0.6
+  JCI                           0.0          0.6          0.0          0.0          0.0
+  Causal Bandits                0.0          0.0         -5.1          4.9          0.0
+  IID                           0.0         13.6          0.0          9.7          0.0

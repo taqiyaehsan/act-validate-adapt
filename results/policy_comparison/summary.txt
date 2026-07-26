@@ -1,0 +1,65 @@
+Policy Comparison — 2026-04-02 10:21
+Runtime: 58.6 minutes
+Edges: results/neurips_final_good_result_3seeds/discovered_edges.json
+  Validated: 51, Obs-only: 93
+Sweep: 5 ε × 3 runs × 120 steps
+
+Method                  ε     kWh    Sat     MO
+--------------------------------------------------
+PolicyGRID            0.5    6.34   83.0  0.668
+PolicyGRID            0.8    5.23   81.7  0.700
+PolicyGRID            1.0    4.50   81.0  0.723
+PolicyGRID            1.5    2.64   76.5  0.763
+PolicyGRID            2.0    0.78   68.7  0.784
+PolicyGRID-O          0.5    5.84   82.5  0.683
+PolicyGRID-O          0.8    5.66   82.2  0.688
+PolicyGRID-O          1.0    5.54   82.3  0.693
+PolicyGRID-O          1.5    5.25   82.0  0.701
+PolicyGRID-O          2.0    4.95   81.4  0.709
+PID                   0.5    6.81   83.2  0.652
+PID                   0.8    6.81   83.2  0.652
+PID                   1.0    6.81   83.2  0.652
+PID                   1.5    6.81   83.2  0.652
+PID                   2.0    6.81   83.2  0.652
+C-MBPO                0.5    2.94   74.6  0.741
+C-MBPO                0.8    2.97   74.2  0.737
+C-MBPO                1.0    2.96   73.9  0.736
+C-MBPO                1.5    2.95   74.2  0.738
+C-MBPO                2.0    2.93   73.9  0.737
+DDPC_Behavioral       0.5    7.83   75.5  0.568
+DDPC_Behavioral       0.8    3.93   71.2  0.685
+DDPC_Behavioral       1.0    3.13   68.3  0.696
+DDPC_Behavioral       1.5    1.13   63.0  0.737
+DDPC_Behavioral       2.0    0.28   58.7  0.742
+DDPC_Subspace         0.5    7.82   75.3  0.568
+DDPC_Subspace         0.8    3.91   71.0  0.684
+DDPC_Subspace         1.0    3.16   68.9  0.698
+DDPC_Subspace         1.5    1.11   63.4  0.741
+DDPC_Subspace         2.0    0.29   57.9  0.737
+MPC_Linear            0.5    1.69   69.1  0.753
+MPC_Linear            0.8    1.84   68.7  0.745
+MPC_Linear            1.0    2.00   69.2  0.742
+MPC_Linear            1.5    2.02   69.5  0.743
+MPC_Linear            2.0    2.01   69.7  0.745
+DDPC_Neural           0.5    8.87   83.7  0.579
+DDPC_Neural           0.8    8.84   83.8  0.581
+DDPC_Neural           1.0    8.74   83.5  0.583
+DDPC_Neural           1.5    8.70   83.8  0.586
+DDPC_Neural           2.0    8.80   83.7  0.582
+DDPC_PETS             0.5    6.78   83.5  0.654
+DDPC_PETS             0.8    3.54   79.0  0.746
+DDPC_PETS             1.0    3.56   79.1  0.745
+DDPC_PETS             1.5    3.52   79.5  0.749
+DDPC_PETS             2.0    3.59   79.3  0.746
+
+Pareto HV:
+  Combined = 0.126
+  C-MBPO               0.378
+  MPC_Linear           0.350
+  PolicyGRID-O         0.301
+  PolicyGRID           0.274
+  DDPC_PETS            0.249
+  PID                  0.245
+  DDPC_Behavioral      0.143
+  DDPC_Subspace        0.142
+  DDPC_Neural          0.126

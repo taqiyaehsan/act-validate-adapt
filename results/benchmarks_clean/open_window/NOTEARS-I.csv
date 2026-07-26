@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.1379,0.6207,25,0.125,0.1538,16,2,14,11,9,7,4,42,NOTEARS-I,open_window,
+0.1379,0.6207,25,0.125,0.1538,16,2,14,11,9,7,4,123,NOTEARS-I,open_window,
+0.1379,0.6207,25,0.125,0.1538,16,2,14,11,9,7,4,456,NOTEARS-I,open_window,
+0.1379,0.6207,25,0.125,0.1538,16,2,14,11,9,7,4,789,NOTEARS-I,open_window,
+0.1379,0.6207,25,0.125,0.1538,16,2,14,11,9,7,4,999,NOTEARS-I,open_window,

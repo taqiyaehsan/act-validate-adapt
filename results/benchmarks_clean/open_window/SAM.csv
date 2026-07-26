@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.5714,0.6429,12,0.5333,0.6154,15,8,7,5,9,6,4,42,SAM,open_window,
+0.6429,0.6429,10,0.6,0.6923,15,9,6,4,9,6,4,123,SAM,open_window,
+0.5714,0.6429,12,0.5333,0.6154,15,8,7,5,9,6,4,456,SAM,open_window,
+0.5714,0.6429,12,0.5333,0.6154,15,8,7,5,9,6,4,789,SAM,open_window,
+0.5,0.6429,14,0.4667,0.5385,15,7,8,6,9,6,4,999,SAM,open_window,

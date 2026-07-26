@@ -1,0 +1,64 @@
+{
+  "dataset": "smart_room",
+  "data_path": "data/simulation_log_2025-03-04T16-42-08-821Z_preprocessed.csv",
+  "columns": [
+    "Temperature",
+    "Humidity",
+    "AirQuality",
+    "EnergyConsumption",
+    "OverallSatisfaction"
+  ],
+  "union_edges": [
+    [
+      "AirQuality",
+      "OverallSatisfaction"
+    ],
+    [
+      "EnergyConsumption",
+      "OverallSatisfaction"
+    ],
+    [
+      "OverallSatisfaction",
+      "Temperature"
+    ],
+    [
+      "Temperature",
+      "EnergyConsumption"
+    ],
+    [
+      "Temperature",
+      "OverallSatisfaction"
+    ]
+  ],
+  "method_edges": {
+    "PC": [
+      [
+        "AirQuality",
+        "OverallSatisfaction"
+      ],
+      [
+        "EnergyConsumption",
+        "OverallSatisfaction"
+      ],
+      [
+        "Temperature",
+        "EnergyConsumption"
+      ],
+      [
+        "Temperature",
+        "OverallSatisfaction"
+      ]
+    ],
+    "SAM": [
+      [
+        "EnergyConsumption",
+        "OverallSatisfaction"
+      ],
+      [
+        "OverallSatisfaction",
+        "Temperature"
+      ]
+    ]
+  },
+  "n_union": 5
+}

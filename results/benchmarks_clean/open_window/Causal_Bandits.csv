@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.1429,0.5714,24,0.1333,0.1538,15,2,13,11,8,7,5,42,Causal Bandits,open_window,
+0.0741,0.5185,25,0.0714,0.0769,14,1,13,12,7,7,6,123,Causal Bandits,open_window,
+0.16,0.56,21,0.1667,0.1538,12,2,10,11,7,5,6,456,Causal Bandits,open_window,
+0.1538,0.5385,22,0.1538,0.1538,13,2,11,11,7,6,6,789,Causal Bandits,open_window,
+0.16,0.56,21,0.1667,0.1538,12,2,10,11,7,5,6,999,Causal Bandits,open_window,

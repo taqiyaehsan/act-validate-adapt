@@ -1,0 +1,77 @@
+{
+  "total_wall_clock_s": 31333.9,
+  "total_wall_clock_min": 522.2,
+  "peak_memory_mb": 832.2,
+  "phases": {
+    "discovery": {
+      "wall_clock_s": 3367.2,
+      "wall_clock_min": 56.12
+    },
+    "benchmark_discovery": {
+      "wall_clock_s": 1469.8,
+      "wall_clock_min": 24.5
+    },
+    "monitoring": {
+      "wall_clock_s": 899.0,
+      "wall_clock_min": 14.98
+    },
+    "policy": {
+      "wall_clock_s": 24114.4,
+      "wall_clock_min": 401.91
+    },
+    "ablation": {
+      "wall_clock_s": 10.3,
+      "wall_clock_min": 0.17
+    },
+    "M3a_attribution": {
+      "wall_clock_s": 234.0,
+      "wall_clock_min": 3.9
+    },
+    "A2_regime_recovery": {
+      "wall_clock_s": 50.8,
+      "wall_clock_min": 0.85
+    },
+    "N2_wrong_prior": {
+      "wall_clock_s": 1188.3,
+      "wall_clock_min": 19.8
+    },
+    "discovery_detail": {
+      "total_interventions": 1576,
+      "interventions_per_seed": [
+        1576
+      ],
+      "total_time_s": 3365.8,
+      "time_per_seed_s": [
+        3365.8
+      ],
+      "n_seeds": 1
+    },
+    "simulator": {
+      "total_sim_steps": 5760,
+      "sim_step_cost_ms": 18,
+      "estimated_sim_time_s": 103.7
+    },
+    "interventions": {
+      "total_interventions": 1576,
+      "avg_sim_steps_per_intervention": 3,
+      "llm_calls_per_intervention": 1
+    },
+    "memory_snapshot": {
+      "peak_mb": 832.2
+    }
+  },
+  "llm": {
+    "model": "gpt-3.5-turbo",
+    "temperature": null,
+    "call_count": 23,
+    "total_prompt_tokens": 11270,
+    "total_completion_tokens": 3357,
+    "total_tokens": 14627
+  },
+  "system": {
+    "platform": "macOS-26.3.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python_version": "3.12.2",
+    "cpu_count": 10
+  }
+}

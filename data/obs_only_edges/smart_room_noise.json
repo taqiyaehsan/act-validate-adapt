@@ -1,0 +1,60 @@
+{
+  "dataset": "smart_room_noise",
+  "data_path": "data/smart_room_noisy_preprocessed.csv",
+  "columns": [
+    "Temperature",
+    "Humidity",
+    "AirQuality",
+    "EnergyConsumption",
+    "OverallSatisfaction"
+  ],
+  "union_edges": [
+    [
+      "AirQuality",
+      "OverallSatisfaction"
+    ],
+    [
+      "Humidity",
+      "OverallSatisfaction"
+    ],
+    [
+      "Temperature",
+      "EnergyConsumption"
+    ],
+    [
+      "Temperature",
+      "Humidity"
+    ]
+  ],
+  "method_edges": {
+    "PC": [
+      [
+        "AirQuality",
+        "OverallSatisfaction"
+      ],
+      [
+        "Humidity",
+        "OverallSatisfaction"
+      ],
+      [
+        "Temperature",
+        "EnergyConsumption"
+      ],
+      [
+        "Temperature",
+        "Humidity"
+      ]
+    ],
+    "SAM": [
+      [
+        "AirQuality",
+        "OverallSatisfaction"
+      ],
+      [
+        "Temperature",
+        "Humidity"
+      ]
+    ]
+  },
+  "n_union": 4
+}

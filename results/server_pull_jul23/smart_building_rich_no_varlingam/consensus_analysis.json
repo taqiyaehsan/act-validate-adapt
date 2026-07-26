@@ -1,0 +1,260 @@
+{
+  "n_seeds": 3,
+  "majority_threshold": 2,
+  "consensus_edges": [
+    [
+      "solarradiation",
+      "temperature"
+    ],
+    [
+      "outdoortemp",
+      "satisfaction"
+    ],
+    [
+      "satisfaction",
+      "airquality"
+    ],
+    [
+      "occupancy",
+      "solarradiation"
+    ],
+    [
+      "windowposition",
+      "occupancy"
+    ],
+    [
+      "temperature",
+      "airquality"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ],
+    [
+      "solarradiation",
+      "pmv"
+    ],
+    [
+      "windowposition",
+      "noisedb"
+    ],
+    [
+      "occupancy",
+      "lightlevel"
+    ],
+    [
+      "lightingpower",
+      "lightlevel"
+    ],
+    [
+      "solarradiation",
+      "windowposition"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "windowposition",
+      "temperature"
+    ],
+    [
+      "satisfaction",
+      "co2"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "outdoortemp",
+      "occupancy"
+    ],
+    [
+      "occupancy",
+      "outdoortemp"
+    ],
+    [
+      "satisfaction",
+      "humidity"
+    ],
+    [
+      "windowposition",
+      "pmv"
+    ],
+    [
+      "solarradiation",
+      "lightlevel"
+    ],
+    [
+      "outdoortemp",
+      "noisedb"
+    ],
+    [
+      "pmv",
+      "solarradiation"
+    ],
+    [
+      "windowposition",
+      "co2"
+    ],
+    [
+      "windowposition",
+      "solarradiation"
+    ],
+    [
+      "hvacpower",
+      "energyconsumption"
+    ],
+    [
+      "outdoortemp",
+      "temperature"
+    ],
+    [
+      "hvacpower",
+      "airquality"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "energyconsumption",
+      "hvacpower"
+    ],
+    [
+      "solarradiation",
+      "outdoortemp"
+    ],
+    [
+      "outdoortemp",
+      "pmv"
+    ],
+    [
+      "occupancy",
+      "noisedb"
+    ],
+    [
+      "satisfaction",
+      "outdoortemp"
+    ],
+    [
+      "occupancy",
+      "temperature"
+    ],
+    [
+      "outdoortemp",
+      "windowposition"
+    ],
+    [
+      "outdoortemp",
+      "solarradiation"
+    ],
+    [
+      "solarradiation",
+      "occupancy"
+    ],
+    [
+      "co2",
+      "satisfaction"
+    ],
+    [
+      "outdoortemp",
+      "humidity"
+    ],
+    [
+      "solarradiation",
+      "noisedb"
+    ],
+    [
+      "windowposition",
+      "outdoortemp"
+    ],
+    [
+      "occupancy",
+      "pmv"
+    ],
+    [
+      "occupancy",
+      "windowposition"
+    ],
+    [
+      "occupancy",
+      "co2"
+    ],
+    [
+      "satisfaction",
+      "noisedb"
+    ]
+  ],
+  "consensus_metrics": {
+    "f1": 0.3733,
+    "precision": 0.3043,
+    "recall": 0.4828,
+    "shd": 47,
+    "n_edges": 46,
+    "tp": 14,
+    "fp": 32,
+    "fn": 15
+  },
+  "edge_frequency": {
+    "solarradiation->temperature": 3,
+    "satisfaction->airquality": 3,
+    "occupancy->solarradiation": 3,
+    "windowposition->occupancy": 3,
+    "solarradiation->pmv": 3,
+    "windowposition->noisedb": 3,
+    "occupancy->lightlevel": 3,
+    "lightingpower->lightlevel": 3,
+    "solarradiation->windowposition": 3,
+    "pmv->temperature": 3,
+    "windowposition->temperature": 3,
+    "satisfaction->co2": 3,
+    "temperature->pmv": 3,
+    "outdoortemp->occupancy": 3,
+    "occupancy->outdoortemp": 3,
+    "satisfaction->humidity": 3,
+    "windowposition->pmv": 3,
+    "outdoortemp->noisedb": 3,
+    "pmv->solarradiation": 3,
+    "windowposition->co2": 3,
+    "windowposition->solarradiation": 3,
+    "hvacpower->energyconsumption": 3,
+    "outdoortemp->temperature": 3,
+    "hvacpower->airquality": 3,
+    "energyconsumption->hvacpower": 3,
+    "solarradiation->outdoortemp": 3,
+    "outdoortemp->pmv": 3,
+    "occupancy->noisedb": 3,
+    "satisfaction->outdoortemp": 3,
+    "occupancy->temperature": 3,
+    "outdoortemp->windowposition": 3,
+    "outdoortemp->solarradiation": 3,
+    "solarradiation->occupancy": 3,
+    "outdoortemp->humidity": 3,
+    "solarradiation->noisedb": 3,
+    "windowposition->outdoortemp": 3,
+    "occupancy->pmv": 3,
+    "occupancy->windowposition": 3,
+    "occupancy->co2": 3,
+    "satisfaction->noisedb": 3,
+    "outdoortemp->satisfaction": 2,
+    "temperature->satisfaction": 2,
+    "co2->satisfaction": 2,
+    "temperature->airquality": 2,
+    "humidity->satisfaction": 2,
+    "solarradiation->lightlevel": 2,
+    "windowposition->humidity": 1,
+    "occupancy->airquality": 1,
+    "outdoortemp->airquality": 1,
+    "humidity->airquality": 1,
+    "occupancy->satisfaction": 1,
+    "windowposition->airquality": 1
+  },
+  "pairwise_jaccard": 0.84,
+  "per_seed_jaccard": [
+    0.84,
+    0.82,
+    0.86
+  ]
+}

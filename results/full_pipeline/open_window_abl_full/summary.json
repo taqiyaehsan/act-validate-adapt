@@ -1,0 +1,32 @@
+{
+  "sim": "open_window",
+  "n_seeds": 3,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "discovery": {
+    "f1": "0.218 \u00b1 0.095",
+    "shd": "14.7 \u00b1 2.5",
+    "n_edges": "5.7 \u00b1 0.9",
+    "f1_mean": 0.2185,
+    "f1_std": 0.0953
+  },
+  "monitoring": {
+    "combined": "72.8 \u00b1 33.5",
+    "combined_mean": 72.77,
+    "combined_std": 33.49
+  },
+  "consensus": {
+    "f1": 0.3333,
+    "precision": 0.6,
+    "recall": 0.2308,
+    "shd": 12,
+    "n_edges": 5,
+    "tp": 3,
+    "fp": 2,
+    "fn": 10
+  },
+  "jaccard": 0.4
+}

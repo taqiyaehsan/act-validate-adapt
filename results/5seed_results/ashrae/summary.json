@@ -1,0 +1,29 @@
+{
+  "sim": "ashrae",
+  "n_seeds": 5,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "discovery": {
+    "f1": "1.000 \u00b1 0.000",
+    "shd": "0.0 \u00b1 0.0",
+    "n_edges": "5.0 \u00b1 0.0",
+    "f1_mean": 1.0,
+    "f1_std": 0.0
+  },
+  "consensus": {
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "shd": 0,
+    "n_edges": 5,
+    "tp": 5,
+    "fp": 0,
+    "fn": 0
+  },
+  "jaccard": 1.0
+}

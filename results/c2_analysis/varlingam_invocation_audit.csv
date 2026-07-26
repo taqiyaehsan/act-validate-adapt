@@ -1,0 +1,59 @@
+config,seed,invocation,call_type,status,lags,total_lagged_edges,error,log_time,source_log
+abl_full,42,1,initial,failure,,,14-th leading minor of the array is not positive definite,20:09:17,abl_full.log
+abl_full,42,2,re-fit (intervention-augmented),success,3,144,,21:16:03,abl_full.log
+abl_full,42,3,re-fit (intervention-augmented),success,3,144,,22:25:01,abl_full.log
+abl_full,42,4,re-fit (intervention-augmented),success,3,142,,23:32:59,abl_full.log
+abl_full,123,1,initial,failure,,,14-th leading minor of the array is not positive definite,00:36:50,abl_full.log
+abl_full,123,2,re-fit (intervention-augmented),success,3,138,,01:42:36,abl_full.log
+abl_full,123,3,re-fit (intervention-augmented),success,3,128,,02:50:44,abl_full.log
+abl_full,123,4,re-fit (intervention-augmented),success,3,128,,03:58:10,abl_full.log
+abl_full,123,5,re-fit (intervention-augmented),success,3,128,,05:05:49,abl_full.log
+abl_full,456,1,initial,failure,,,14-th leading minor of the array is not positive definite,06:09:44,abl_full.log
+abl_full,456,2,re-fit (intervention-augmented),success,3,146,,07:15:34,abl_full.log
+abl_full,456,3,re-fit (intervention-augmented),success,3,140,,08:24:02,abl_full.log
+abl_full,456,4,re-fit (intervention-augmented),success,3,135,,09:32:25,abl_full.log
+no_pc,42,1,initial,failure,,,14-th leading minor of the array is not positive definite,20:09:20,no_pc.log
+no_pc,42,2,re-fit (intervention-augmented),success,4,181,,21:15:58,no_pc.log
+no_pc,42,3,re-fit (intervention-augmented),success,3,133,,22:24:54,no_pc.log
+no_pc,42,4,re-fit (intervention-augmented),success,3,147,,23:33:02,no_pc.log
+no_pc,42,5,re-fit (intervention-augmented),success,3,145,,00:40:08,no_pc.log
+no_pc,123,1,initial,failure,,,14-th leading minor of the array is not positive definite,01:43:39,no_pc.log
+no_pc,123,2,re-fit (intervention-augmented),success,4,178,,02:49:57,no_pc.log
+no_pc,123,3,re-fit (intervention-augmented),success,3,144,,03:58:56,no_pc.log
+no_pc,123,4,re-fit (intervention-augmented),success,3,139,,05:06:40,no_pc.log
+no_pc,123,5,re-fit (intervention-augmented),success,3,140,,06:13:42,no_pc.log
+no_pc,456,1,initial,failure,,,14-th leading minor of the array is not positive definite,07:17:02,no_pc.log
+no_pc,456,2,re-fit (intervention-augmented),success,4,191,,08:23:25,no_pc.log
+no_pc,456,3,re-fit (intervention-augmented),success,3,138,,09:33:16,no_pc.log
+no_pc,456,4,re-fit (intervention-augmented),success,3,141,,10:30:47,no_pc.log
+no_sam,42,1,initial,failure,,,14-th leading minor of the array is not positive definite,12:16:20,no_sam.log
+no_sam,42,2,re-fit (intervention-augmented),success,3,147,,12:17:52,no_sam.log
+no_sam,42,3,re-fit (intervention-augmented),success,3,139,,12:19:47,no_sam.log
+no_sam,42,4,re-fit (intervention-augmented),success,3,146,,12:20:31,no_sam.log
+no_sam,42,5,re-fit (intervention-augmented),success,3,144,,12:20:54,no_sam.log
+no_sam,123,1,initial,failure,,,14-th leading minor of the array is not positive definite,12:22:25,no_sam.log
+no_sam,123,2,re-fit (intervention-augmented),success,4,235,,12:23:55,no_sam.log
+no_sam,123,3,re-fit (intervention-augmented),success,3,143,,12:26:19,no_sam.log
+no_sam,123,4,re-fit (intervention-augmented),success,3,146,,12:26:43,no_sam.log
+no_sam,123,5,re-fit (intervention-augmented),success,3,142,,12:27:05,no_sam.log
+no_sam,456,1,initial,failure,,,14-th leading minor of the array is not positive definite,12:28:45,no_sam.log
+no_sam,456,2,re-fit (intervention-augmented),success,3,147,,12:30:16,no_sam.log
+no_sam,456,3,re-fit (intervention-augmented),success,3,134,,12:32:00,no_sam.log
+no_sam,456,4,re-fit (intervention-augmented),success,3,142,,12:32:27,no_sam.log
+no_sam,456,5,re-fit (intervention-augmented),success,3,130,,12:32:54,no_sam.log
+no_sam,456,6,re-fit (intervention-augmented),success,3,130,,12:33:15,no_sam.log
+no_llm,42,1,initial,failure,,,14-th leading minor of the array is not positive definite,10:58:44,no_llm_jul24.log
+no_llm,42,2,re-fit (intervention-augmented),success,4,171,,11:49:38,no_llm_jul24.log
+no_llm,42,3,re-fit (intervention-augmented),success,3,142,,12:44:49,no_llm_jul24.log
+no_llm,42,4,re-fit (intervention-augmented),success,3,140,,13:52:21,no_llm_jul24.log
+no_llm,123,1,initial,failure,,,14-th leading minor of the array is not positive definite,14:56:04,no_llm_jul24.log
+no_llm,123,2,re-fit (intervention-augmented),success,3,146,,16:02:21,no_llm_jul24.log
+no_llm,123,3,re-fit (intervention-augmented),success,3,144,,17:11:40,no_llm_jul24.log
+no_llm,123,4,re-fit (intervention-augmented),success,3,147,,18:19:40,no_llm_jul24.log
+no_llm,123,5,re-fit (intervention-augmented),success,3,150,,19:27:29,no_llm_jul24.log
+no_llm,123,6,re-fit (intervention-augmented),success,3,146,,20:35:31,no_llm_jul24.log
+no_llm,456,1,initial,failure,,,14-th leading minor of the array is not positive definite,21:39:21,no_llm_jul24.log
+no_llm,456,2,re-fit (intervention-augmented),success,4,196,,22:45:38,no_llm_jul24.log
+no_llm,456,3,re-fit (intervention-augmented),success,3,145,,23:54:08,no_llm_jul24.log
+no_llm,456,4,re-fit (intervention-augmented),success,3,140,,01:01:53,no_llm_jul24.log
+no_llm,456,5,re-fit (intervention-augmented),success,3,143,,02:09:21,no_llm_jul24.log

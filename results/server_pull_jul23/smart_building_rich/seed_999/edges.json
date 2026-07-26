@@ -1,0 +1,126 @@
+{
+  "seed": 999,
+  "validated_edges": [
+    [
+      "solarradiation",
+      "pmv"
+    ],
+    [
+      "noisedb",
+      "airquality"
+    ],
+    [
+      "solarradiation",
+      "occupancy"
+    ],
+    [
+      "occupancy",
+      "pmv"
+    ],
+    [
+      "pmv",
+      "solarradiation"
+    ],
+    [
+      "windowposition",
+      "solarradiation"
+    ],
+    [
+      "windowposition",
+      "pmv"
+    ],
+    [
+      "satisfaction",
+      "outdoortemp"
+    ],
+    [
+      "solarradiation",
+      "windowposition"
+    ],
+    [
+      "hvacpower",
+      "energyconsumption"
+    ],
+    [
+      "occupancy",
+      "co2"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "lightingpower",
+      "lightlevel"
+    ],
+    [
+      "HVACPower",
+      "AirQuality"
+    ],
+    [
+      "occupancy",
+      "windowposition"
+    ],
+    [
+      "solarradiation",
+      "temperature"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ],
+    [
+      "outdoortemp",
+      "noisedb"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "outdoortemp",
+      "satisfaction"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "outdoortemp",
+      "solarradiation"
+    ],
+    [
+      "occupancy",
+      "noisedb"
+    ],
+    [
+      "occupancy",
+      "lightlevel"
+    ],
+    [
+      "outdoortemp",
+      "pmv"
+    ],
+    [
+      "temperature",
+      "airquality"
+    ],
+    [
+      "outdoortemp",
+      "temperature"
+    ],
+    [
+      "satisfaction",
+      "airquality"
+    ]
+  ],
+  "f1": 0.2807,
+  "precision": 0.2857,
+  "recall": 0.2759,
+  "shd": 41,
+  "n_edges": 28,
+  "tp": 8,
+  "fp": 20,
+  "fn": 21,
+  "time_s": 12030.7
+}

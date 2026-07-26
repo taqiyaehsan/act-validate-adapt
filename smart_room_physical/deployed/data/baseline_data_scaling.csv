@@ -1,0 +1,9 @@
+column,data_min,data_max
+Heater,0.0,1.0
+Humidifier,0.0,1.0
+Fan,0.0,1.0
+Temperature,16.6,25.549999999999997
+Humidity,12.95,26.65
+AirQuality,23.2,88.33333333333333
+EnergyConsumption,0.0,567.923
+Satisfaction,0.0,52.5

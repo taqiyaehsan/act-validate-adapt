@@ -1,0 +1,307 @@
+00:07:46 Loaded edges: 51 validated, 93 obs-only
+00:07:46 Data: (11520, 15), smap: 15 vars
+00:07:46 
+Fitting baselines...
+00:07:46   DDPC suite (Behavioral, Subspace, Neural, PETS)...
+00:07:46 ── Fitting DeePC (Behavioral) ──────────────────────────────
+00:07:46 DeePCController fitted  T_col=8054, Q3=(24, 24)
+00:07:46 ── Fitting Subspace DDPC ───────────────────────────────────
+00:07:46 SubspaceDDPC fitted  A(8, 8)  B(8, 2)  C(2, 8)  n_x=8
+00:07:46 ── Fitting Neural DDPC ─────────────────────────────────────
+00:07:48 NeuralDDPC fitted  MLP(32, 16)  11519 transitions
+00:07:48 ── Fitting PETS DDPC ───────────────────────────────────────
+00:07:51 PETSController fitted  ensemble=2  MLP(32, 16)  11519 transitions
+00:07:51 DDPC suite ready: DDPC_Behavioral, DDPC_Subspace, DDPC_Neural, DDPC_PETS
+00:07:51   MPC Linear...
+00:07:51 LinearMPC: Ridge dynamics R²=0.712, features=15, targets=13
+00:07:51   C-MBPO (causal RL on validated DAG)...
+00:07:51 C-MBPO: causal dynamics for 11 vars, mean R²=0.754
+00:07:51 C-MBPO: 30 real episodes + 1x imagined rollouts
+00:08:03   C-MBPO episode 10/30: avg_reward=0.546, replay=800
+00:08:14   C-MBPO episode 20/30: avg_reward=0.719, replay=1600
+00:08:25   C-MBPO episode 30/30: avg_reward=0.750, replay=2400
+00:08:25   All baselines fitted.
+
+00:08:25 ======================================================================
+00:08:25   EPSILON-CONSTRAINT PARETO SWEEP
+00:08:25   Methods: 10 | ε values: [0.5, 0.8, 1.0, 1.5, 2.0]
+00:08:25   Episodes per (method, ε): 3 x 120 steps
+00:08:25 ======================================================================
+00:08:25 
+── Comfort target ε=0.5 (1/5) ──
+00:08:26 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+00:08:26 PolicyEngine init: 51 edges, SEMs for ['Satisfaction', 'NoiseDB', 'Temperature', 'CO2', 'PMV', 'WindowPosition', 'LightLevel', 'OutdoorTemp', 'HVACPower', 'SolarRadiation', 'Humidity', 'AirQuality', 'EnergyConsumption'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+00:08:26 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+00:08:26 PolicyEngine init: 93 edges, SEMs for ['EnergyConsumption', 'PMV', 'WindowPosition', 'SolarRadiation', 'LightLevel', 'Satisfaction', 'Temperature', 'Occupancy', 'AirQuality', 'OutdoorTemp', 'NoiseDB', 'Humidity', 'LightingPower', 'HVACPower', 'CO2'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+00:08:26   Running PID...
+00:08:28     Run 0: kWh=5.13, Sat=93.8, MO=0.777
+00:08:30     Run 1: kWh=5.12, Sat=93.5, MO=0.775
+00:08:32     Run 2: kWh=5.14, Sat=93.7, MO=0.775
+00:08:32   Running PolicyGRID...
+00:08:35     Run 0: kWh=6.34, Sat=93.9, MO=0.733
+00:08:37     Run 1: kWh=6.34, Sat=94.0, MO=0.733
+00:08:39     Run 2: kWh=6.34, Sat=93.8, MO=0.732
+00:08:39   Running PolicyGRID-O...
+00:08:41     Run 0: kWh=5.84, Sat=94.0, MO=0.752
+00:08:44     Run 1: kWh=5.84, Sat=93.9, MO=0.751
+00:08:46     Run 2: kWh=5.84, Sat=94.1, MO=0.752
+00:08:46   Running C-MBPO...
+00:08:48     Run 0: kWh=2.01, Sat=85.6, MO=0.840
+00:08:50     Run 1: kWh=2.01, Sat=85.5, MO=0.840
+00:08:52     Run 2: kWh=1.95, Sat=85.0, MO=0.839
+00:08:52   Running DDPC_Behavioral...
+00:08:54     Run 0: kWh=4.20, Sat=82.3, MO=0.741
+00:08:57     Run 1: kWh=4.17, Sat=82.5, MO=0.743
+00:08:59     Run 2: kWh=4.23, Sat=82.4, MO=0.740
+00:08:59   Running DDPC_Subspace...
+00:09:01     Run 0: kWh=3.87, Sat=82.2, MO=0.752
+00:09:03     Run 1: kWh=3.68, Sat=82.3, MO=0.760
+00:09:06     Run 2: kWh=3.79, Sat=82.2, MO=0.755
+00:09:06   Running MPC_Linear...
+00:09:39     Run 0: kWh=2.32, Sat=84.0, MO=0.820
+00:10:12     Run 1: kWh=2.08, Sat=83.3, MO=0.824
+00:10:46     Run 2: kWh=2.17, Sat=84.2, MO=0.827
+00:10:46   Running DDPC_Neural...
+00:11:11     Run 0: kWh=8.78, Sat=91.2, MO=0.628
+00:11:37     Run 1: kWh=8.83, Sat=91.0, MO=0.625
+00:12:02     Run 2: kWh=8.82, Sat=91.3, MO=0.627
+00:12:02   Running DDPC_PETS...
+00:14:23     Run 0: kWh=3.06, Sat=91.8, MO=0.840
+00:16:44     Run 1: kWh=3.00, Sat=91.9, MO=0.842
+00:19:05     Run 2: kWh=3.07, Sat=92.6, MO=0.844
+00:19:05 
+── Comfort target ε=0.8 (2/5) ──
+00:19:05 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+00:19:05 PolicyEngine init: 51 edges, SEMs for ['Satisfaction', 'NoiseDB', 'Temperature', 'CO2', 'PMV', 'WindowPosition', 'LightLevel', 'OutdoorTemp', 'HVACPower', 'SolarRadiation', 'Humidity', 'AirQuality', 'EnergyConsumption'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+00:19:05 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+00:19:05 PolicyEngine init: 93 edges, SEMs for ['EnergyConsumption', 'PMV', 'WindowPosition', 'SolarRadiation', 'LightLevel', 'Satisfaction', 'Temperature', 'Occupancy', 'AirQuality', 'OutdoorTemp', 'NoiseDB', 'Humidity', 'LightingPower', 'HVACPower', 'CO2'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+00:19:05   Running PolicyGRID...
+00:19:08     Run 0: kWh=5.23, Sat=93.5, MO=0.771
+00:19:10     Run 1: kWh=5.23, Sat=93.7, MO=0.772
+00:19:12     Run 2: kWh=5.23, Sat=93.5, MO=0.771
+00:19:12   Running PolicyGRID-O...
+00:19:14     Run 0: kWh=5.66, Sat=93.7, MO=0.756
+00:19:17     Run 1: kWh=5.66, Sat=94.1, MO=0.759
+00:19:19     Run 2: kWh=5.66, Sat=93.9, MO=0.758
+00:19:19   Running C-MBPO...
+00:19:21     Run 0: kWh=1.93, Sat=84.7, MO=0.838
+00:19:23     Run 1: kWh=1.96, Sat=85.3, MO=0.841
+00:19:26     Run 2: kWh=2.03, Sat=85.4, MO=0.839
+00:19:26   Running DDPC_Behavioral...
+00:19:28     Run 0: kWh=0.04, Sat=78.5, MO=0.869
+00:19:30     Run 1: kWh=0.05, Sat=76.4, MO=0.857
+00:19:33     Run 2: kWh=0.07, Sat=76.4, MO=0.856
+00:19:33   Running DDPC_Subspace...
+00:19:35     Run 0: kWh=0.08, Sat=78.8, MO=0.870
+00:19:37     Run 1: kWh=0.09, Sat=77.4, MO=0.861
+00:19:39     Run 2: kWh=0.06, Sat=77.7, MO=0.864
+00:19:39   Running MPC_Linear...
+00:20:13     Run 0: kWh=2.23, Sat=84.1, MO=0.824
+00:20:46     Run 1: kWh=2.27, Sat=83.3, MO=0.817
+00:21:19     Run 2: kWh=2.50, Sat=83.9, MO=0.813
+00:21:19   Running DDPC_Neural...
+00:21:45     Run 0: kWh=8.83, Sat=91.4, MO=0.627
+00:22:10     Run 1: kWh=8.86, Sat=91.5, MO=0.627
+00:22:35     Run 2: kWh=8.72, Sat=91.5, MO=0.632
+00:22:35   Running DDPC_PETS...
+00:24:56     Run 0: kWh=2.97, Sat=92.2, MO=0.845
+00:27:17     Run 1: kWh=3.04, Sat=91.7, MO=0.839
+00:29:37     Run 2: kWh=3.27, Sat=91.8, MO=0.832
+00:29:37 
+── Comfort target ε=1.0 (3/5) ──
+00:29:37 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+00:29:37 PolicyEngine init: 51 edges, SEMs for ['Satisfaction', 'NoiseDB', 'Temperature', 'CO2', 'PMV', 'WindowPosition', 'LightLevel', 'OutdoorTemp', 'HVACPower', 'SolarRadiation', 'Humidity', 'AirQuality', 'EnergyConsumption'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+00:29:38 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+00:29:38 PolicyEngine init: 93 edges, SEMs for ['EnergyConsumption', 'PMV', 'WindowPosition', 'SolarRadiation', 'LightLevel', 'Satisfaction', 'Temperature', 'Occupancy', 'AirQuality', 'OutdoorTemp', 'NoiseDB', 'Humidity', 'LightingPower', 'HVACPower', 'CO2'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+00:29:38   Running PolicyGRID...
+00:29:40     Run 0: kWh=4.49, Sat=93.4, MO=0.797
+00:29:42     Run 1: kWh=4.49, Sat=93.4, MO=0.797
+00:29:44     Run 2: kWh=4.49, Sat=93.6, MO=0.798
+00:29:44   Running PolicyGRID-O...
+00:29:46     Run 0: kWh=5.54, Sat=93.9, MO=0.762
+00:29:49     Run 1: kWh=5.54, Sat=93.9, MO=0.762
+00:29:51     Run 2: kWh=5.54, Sat=93.8, MO=0.761
+00:29:51   Running C-MBPO...
+00:29:53     Run 0: kWh=2.01, Sat=85.3, MO=0.839
+00:29:55     Run 1: kWh=1.88, Sat=85.7, MO=0.846
+00:29:57     Run 2: kWh=1.95, Sat=86.5, MO=0.848
+00:29:57   Running DDPC_Behavioral...
+00:30:00     Run 0: kWh=0.04, Sat=77.1, MO=0.861
+00:30:02     Run 1: kWh=0.04, Sat=78.2, MO=0.868
+00:30:04     Run 2: kWh=0.04, Sat=78.2, MO=0.868
+00:30:04   Running DDPC_Subspace...
+00:30:07     Run 0: kWh=0.04, Sat=75.8, MO=0.853
+00:30:09     Run 1: kWh=0.07, Sat=74.1, MO=0.842
+00:30:11     Run 2: kWh=0.04, Sat=77.8, MO=0.865
+00:30:11   Running MPC_Linear...
+00:30:45     Run 0: kWh=2.19, Sat=83.3, MO=0.821
+00:31:18     Run 1: kWh=2.18, Sat=83.8, MO=0.824
+00:31:51     Run 2: kWh=2.24, Sat=83.5, MO=0.820
+00:31:51   Running DDPC_Neural...
+00:32:17     Run 0: kWh=8.84, Sat=91.1, MO=0.625
+00:32:42     Run 1: kWh=8.91, Sat=91.3, MO=0.624
+00:33:07     Run 2: kWh=8.81, Sat=91.3, MO=0.627
+00:33:07   Running DDPC_PETS...
+00:35:28     Run 0: kWh=3.17, Sat=91.9, MO=0.836
+00:37:49     Run 1: kWh=2.97, Sat=92.4, MO=0.846
+00:40:10     Run 2: kWh=3.18, Sat=92.2, MO=0.837
+00:40:10 
+── Comfort target ε=1.5 (4/5) ──
+00:40:10 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+00:40:10 PolicyEngine init: 51 edges, SEMs for ['Satisfaction', 'NoiseDB', 'Temperature', 'CO2', 'PMV', 'WindowPosition', 'LightLevel', 'OutdoorTemp', 'HVACPower', 'SolarRadiation', 'Humidity', 'AirQuality', 'EnergyConsumption'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+00:40:10 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+00:40:10 PolicyEngine init: 93 edges, SEMs for ['EnergyConsumption', 'PMV', 'WindowPosition', 'SolarRadiation', 'LightLevel', 'Satisfaction', 'Temperature', 'Occupancy', 'AirQuality', 'OutdoorTemp', 'NoiseDB', 'Humidity', 'LightingPower', 'HVACPower', 'CO2'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+00:40:10   Running PolicyGRID...
+00:40:13     Run 0: kWh=2.64, Sat=92.4, MO=0.858
+00:40:15     Run 1: kWh=2.64, Sat=92.0, MO=0.856
+00:40:58     Run 2: kWh=2.64, Sat=92.3, MO=0.858
+00:40:58   Running PolicyGRID-O...
+00:41:00     Run 0: kWh=5.24, Sat=93.8, MO=0.772
+00:41:02     Run 1: kWh=5.24, Sat=93.8, MO=0.772
+00:41:05     Run 2: kWh=5.24, Sat=93.9, MO=0.773
+00:41:05   Running C-MBPO...
+00:41:07     Run 0: kWh=2.00, Sat=85.0, MO=0.837
+00:41:09     Run 1: kWh=1.90, Sat=85.1, MO=0.842
+00:41:11     Run 2: kWh=1.93, Sat=85.1, MO=0.840
+00:41:11   Running DDPC_Behavioral...
+00:41:14     Run 0: kWh=0.04, Sat=70.4, MO=0.821
+00:41:17     Run 1: kWh=0.04, Sat=75.1, MO=0.849
+00:41:19     Run 2: kWh=0.04, Sat=76.9, MO=0.860
+00:41:19   Running DDPC_Subspace...
+00:41:22     Run 0: kWh=0.04, Sat=69.7, MO=0.817
+00:41:24     Run 1: kWh=0.04, Sat=76.7, MO=0.859
+00:41:27     Run 2: kWh=0.04, Sat=78.9, MO=0.872
+00:41:27   Running MPC_Linear...
+00:42:00     Run 0: kWh=2.43, Sat=83.8, MO=0.815
+00:42:33     Run 1: kWh=2.14, Sat=83.0, MO=0.820
+00:43:07     Run 2: kWh=2.39, Sat=82.6, MO=0.809
+00:43:07   Running DDPC_Neural...
+00:43:32     Run 0: kWh=8.81, Sat=91.3, MO=0.627
+00:43:57     Run 1: kWh=8.79, Sat=91.2, MO=0.628
+00:44:23     Run 2: kWh=8.81, Sat=91.5, MO=0.629
+00:44:23   Running DDPC_PETS...
+00:46:43     Run 0: kWh=2.91, Sat=91.6, MO=0.844
+00:51:16     Run 1: kWh=2.90, Sat=91.7, MO=0.845
+00:55:52     Run 2: kWh=3.00, Sat=91.9, MO=0.842
+00:55:52 
+── Comfort target ε=2.0 (5/5) ──
+00:55:52 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+00:55:52 PolicyEngine init: 51 edges, SEMs for ['Satisfaction', 'NoiseDB', 'Temperature', 'CO2', 'PMV', 'WindowPosition', 'LightLevel', 'OutdoorTemp', 'HVACPower', 'SolarRadiation', 'Humidity', 'AirQuality', 'EnergyConsumption'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+00:55:52 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+00:55:52 PolicyEngine init: 93 edges, SEMs for ['EnergyConsumption', 'PMV', 'WindowPosition', 'SolarRadiation', 'LightLevel', 'Satisfaction', 'Temperature', 'Occupancy', 'AirQuality', 'OutdoorTemp', 'NoiseDB', 'Humidity', 'LightingPower', 'HVACPower', 'CO2'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+00:55:52   Running PolicyGRID...
+00:55:56     Run 0: kWh=0.78, Sat=90.0, MO=0.911
+00:56:01     Run 1: kWh=0.78, Sat=88.8, MO=0.904
+00:56:05     Run 2: kWh=0.78, Sat=90.6, MO=0.915
+00:56:05   Running PolicyGRID-O...
+00:56:10     Run 0: kWh=4.95, Sat=93.8, MO=0.783
+00:56:15     Run 1: kWh=4.95, Sat=93.9, MO=0.783
+00:56:19     Run 2: kWh=4.95, Sat=93.7, MO=0.782
+00:56:19   Running C-MBPO...
+00:56:24     Run 0: kWh=1.95, Sat=85.7, MO=0.843
+00:56:28     Run 1: kWh=1.96, Sat=85.8, MO=0.843
+00:56:33     Run 2: kWh=1.99, Sat=85.1, MO=0.838
+00:56:33   Running DDPC_Behavioral...
+00:56:37     Run 0: kWh=0.04, Sat=71.2, MO=0.826
+00:56:42     Run 1: kWh=0.04, Sat=75.8, MO=0.853
+00:56:47     Run 2: kWh=0.04, Sat=69.4, MO=0.815
+00:56:47   Running DDPC_Subspace...
+00:56:51     Run 0: kWh=0.04, Sat=69.3, MO=0.814
+00:56:56     Run 1: kWh=0.04, Sat=78.3, MO=0.868
+00:57:01     Run 2: kWh=0.04, Sat=71.7, MO=0.829
+00:57:01   Running MPC_Linear...
+00:58:06     Run 0: kWh=2.19, Sat=83.2, MO=0.820
+00:59:11     Run 1: kWh=2.19, Sat=84.2, MO=0.825
+01:00:16     Run 2: kWh=2.17, Sat=83.0, MO=0.819
+01:00:16   Running DDPC_Neural...
+01:01:06     Run 0: kWh=8.82, Sat=91.3, MO=0.627
+01:01:56     Run 1: kWh=8.69, Sat=91.3, MO=0.632
+01:02:45     Run 2: kWh=8.74, Sat=91.3, MO=0.630
+01:02:45   Running DDPC_PETS...
+01:07:22     Run 0: kWh=2.96, Sat=92.0, MO=0.844
+01:11:59     Run 1: kWh=3.08, Sat=91.9, MO=0.840
+01:16:35     Run 2: kWh=2.96, Sat=91.5, MO=0.841
+01:16:35 
+======================================================================
+01:16:35   RESULTS SUMMARY
+01:16:35 ======================================================================
+01:16:35 
+  At ε=0.8:
+01:16:35     PID                  MO=0.776  kWh=5.13  Sat=93.7
+01:16:35     PolicyGRID           MO=0.771  kWh=5.23  Sat=93.6
+01:16:35     PolicyGRID-O         MO=0.758  kWh=5.66  Sat=93.9
+01:16:35     C-MBPO               MO=0.839  kWh=1.98  Sat=85.2
+01:16:35     DDPC_Behavioral      MO=0.861  kWh=0.06  Sat=77.1
+01:16:35     DDPC_Subspace        MO=0.865  kWh=0.08  Sat=77.9
+01:16:35     MPC_Linear           MO=0.818  kWh=2.33  Sat=83.8
+01:16:35     DDPC_Neural          MO=0.629  kWh=8.80  Sat=91.5
+01:16:35     DDPC_PETS            MO=0.839  kWh=3.10  Sat=91.9
+01:16:35 
+  Pareto HV (across all ε):
+01:16:35     Combined HV = 0.297
+01:16:35     DDPC_PETS            HV=0.442
+01:16:35     C-MBPO               HV=0.417
+01:16:35     MPC_Linear           HV=0.377
+01:16:35     PID                  HV=0.338
+01:16:35     PolicyGRID-O         HV=0.297
+01:16:35     DDPC_Subspace        HV=0.287
+01:16:35     DDPC_Behavioral      HV=0.271
+01:16:35     PolicyGRID           HV=0.265
+01:16:35     DDPC_Neural          HV=0.105
+01:16:35 
+  Full sweep table (mean over 3 runs):
+01:16:35   Method                  ε     kWh    Sat     MO
+01:16:35   --------------------------------------------------
+01:16:35   PolicyGRID            0.5    6.34   93.9  0.733
+01:16:35   PolicyGRID            0.8    5.23   93.6  0.771
+01:16:35   PolicyGRID            1.0    4.50   93.5  0.797
+01:16:35   PolicyGRID            1.5    2.64   92.2  0.857
+01:16:35   PolicyGRID            2.0    0.78   89.8  0.910
+01:16:35   PolicyGRID-O          0.5    5.84   94.0  0.752
+01:16:35   PolicyGRID-O          0.8    5.66   93.9  0.758
+01:16:35   PolicyGRID-O          1.0    5.54   93.9  0.762
+01:16:35   PolicyGRID-O          1.5    5.25   93.8  0.772
+01:16:35   PolicyGRID-O          2.0    4.95   93.8  0.783
+01:16:35   PID                   0.5    5.13   93.7  0.776
+01:16:35   PID                   0.8    5.13   93.7  0.776
+01:16:35   PID                   1.0    5.13   93.7  0.776
+01:16:35   PID                   1.5    5.13   93.7  0.776
+01:16:35   PID                   2.0    5.13   93.7  0.776
+01:16:35   C-MBPO                0.5    1.99   85.4  0.840
+01:16:35   C-MBPO                0.8    1.98   85.2  0.839
+01:16:35   C-MBPO                1.0    1.95   85.9  0.844
+01:16:35   C-MBPO                1.5    1.94   85.1  0.840
+01:16:35   C-MBPO                2.0    1.97   85.5  0.841
+01:16:35   DDPC_Behavioral       0.5    4.20   82.4  0.741
+01:16:35   DDPC_Behavioral       0.8    0.06   77.1  0.861
+01:16:35   DDPC_Behavioral       1.0    0.04   77.8  0.866
+01:16:35   DDPC_Behavioral       1.5    0.04   74.1  0.843
+01:16:35   DDPC_Behavioral       2.0    0.04   72.1  0.831
+01:16:35   DDPC_Subspace         0.5    3.78   82.2  0.756
+01:16:35   DDPC_Subspace         0.8    0.08   77.9  0.865
+01:16:35   DDPC_Subspace         1.0    0.05   75.9  0.853
+01:16:35   DDPC_Subspace         1.5    0.04   75.1  0.849
+01:16:35   DDPC_Subspace         2.0    0.04   73.1  0.837
+01:16:35   MPC_Linear            0.5    2.19   83.8  0.824
+01:16:35   MPC_Linear            0.8    2.33   83.8  0.818
+01:16:35   MPC_Linear            1.0    2.20   83.6  0.822
+01:16:35   MPC_Linear            1.5    2.32   83.1  0.815
+01:16:35   MPC_Linear            2.0    2.18   83.4  0.821
+01:16:35   DDPC_Neural           0.5    8.81   91.2  0.627
+01:16:35   DDPC_Neural           0.8    8.80   91.5  0.629
+01:16:35   DDPC_Neural           1.0    8.85   91.2  0.625
+01:16:35   DDPC_Neural           1.5    8.80   91.3  0.628
+01:16:35   DDPC_Neural           2.0    8.75   91.3  0.630
+01:16:35   DDPC_PETS             0.5    3.05   92.1  0.842
+01:16:35   DDPC_PETS             0.8    3.10   91.9  0.839
+01:16:35   DDPC_PETS             1.0    3.11   92.1  0.840
+01:16:35   DDPC_PETS             1.5    2.94   91.8  0.844
+01:16:35   DDPC_PETS             2.0    3.00   91.8  0.842
+01:16:35 
+  Generating figures...
+01:16:35   Saved fig_pareto.png
+01:16:35   Saved fig_bars.png
+01:16:36   Saved fig_sweep.png
+01:16:36 
+  Results saved to results/policy_comparison/
+01:16:36   Total time: 68.8 minutes

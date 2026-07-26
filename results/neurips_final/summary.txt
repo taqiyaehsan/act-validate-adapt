@@ -1,0 +1,134 @@
+NeurIPS Full Single-Seed Run — Summary
+=======================================================
+Date: 2026-03-30 06:14
+Seed: 42
+Runtime: 524.5 minutes
+Interventions: 1576
+
+DISCOVERY
+----------------------------------------
+  PolicyGRID             F1=0.405  P=0.333  R=0.517  SHD=44
+  PolicyGRID-O           F1=0.290  P=0.181  R=0.724  SHD=103
+  PC                     F1=0.353  P=0.409  R=0.310  SHD=33
+  SAM                    F1=0.057  P=0.167  R=0.034  SHD=33
+  GIES                   F1=0.000  P=0.000  R=0.000  SHD=29
+  ICP                    F1=0.167  P=0.211  R=0.138  SHD=40
+  NOTEARS-I              F1=0.079  P=0.051  R=0.172  SHD=117
+  ABCD                   F1=0.167  P=0.211  R=0.138  SHD=40
+  JCI                    F1=0.167  P=0.211  R=0.138  SHD=40
+  Causal Bandits         F1=0.167  P=0.211  R=0.138  SHD=40
+  IID                    F1=0.392  P=0.455  R=0.345  SHD=31
+
+MONITORING
+----------------------------------------
+  PolicyGRID             Occ= 96.5%  Win= 56.6%  Comb= 56.7%
+  PolicyGRID-O           Occ= 88.6%  Win= 56.6%  Comb= 56.4%
+  PC                     Occ= 97.1%  Win= 80.5%  Comb= 79.6%
+  SAM                    Occ= 94.8%  Win= 67.8%  Comb= 62.2%
+  ICP                    Occ= 92.2%  Win= 62.4%  Comb= 62.2%
+  NOTEARS-I              Occ= 99.5%  Win= 64.5%  Comb= 64.2%
+  ABCD                   Occ= 92.2%  Win= 62.4%  Comb= 62.2%
+  JCI                    Occ= 92.2%  Win= 62.4%  Comb= 62.2%
+  Causal Bandits         Occ= 92.2%  Win= 62.4%  Comb= 62.2%
+  IID                    Occ= 93.6%  Win= 46.8%  Comb= 45.6%
+
+POLICY (Pareto sweep)
+----------------------------------------
+
+  ε=0.5:
+    PolicyGRID           MO=0.804  kWh=3.70  DH=0.000  Viol=0.0%
+    PolicyGRID-O         MO=0.906  kWh=0.74  DH=0.811  Viol=45.3%
+    PolicyGRID-R         MO=0.804  kWh=3.70  DH=0.000  Viol=0.0%
+    MPC_Linear           MO=0.872  kWh=0.48  DH=0.024  Viol=6.7%
+    MPC_Neural           MO=0.869  kWh=1.02  DH=0.000  Viol=0.3%
+    C-MBPO               MO=0.882  kWh=0.89  DH=0.001  Viol=0.3%
+    DDPC_Behavioral      MO=0.895  kWh=0.70  DH=2.617  Viol=48.3%
+    DDPC_Subspace        MO=0.883  kWh=0.34  DH=1.686  Viol=55.0%
+    DDPC_Neural          MO=0.872  kWh=0.92  DH=0.009  Viol=1.7%
+    PID                  MO=0.862  kWh=2.35  DH=0.000  Viol=0.0%
+
+  ε=0.8:
+    PolicyGRID           MO=0.836  kWh=2.63  DH=0.000  Viol=0.0%
+    PolicyGRID-O         MO=0.915  kWh=0.67  DH=0.179  Viol=26.4%
+    PolicyGRID-R         MO=0.880  kWh=0.40  DH=1.652  Viol=50.0%
+    MPC_Linear           MO=0.875  kWh=0.47  DH=0.011  Viol=4.2%
+    MPC_Neural           MO=0.870  kWh=0.79  DH=0.007  Viol=2.5%
+    C-MBPO               MO=0.875  kWh=0.92  DH=0.011  Viol=3.9%
+    DDPC_Behavioral      MO=0.916  kWh=0.60  DH=0.559  Viol=38.0%
+    DDPC_Subspace        MO=0.881  kWh=0.30  DH=1.882  Viol=66.1%
+    DDPC_Neural          MO=0.867  kWh=0.90  DH=0.004  Viol=1.7%
+    PID                  MO=0.857  kWh=2.43  DH=0.000  Viol=0.0%
+
+  ε=1.0:
+    PolicyGRID           MO=0.899  kWh=0.58  DH=0.025  Viol=5.8%
+    PolicyGRID-O         MO=0.904  kWh=0.67  DH=1.792  Viol=53.6%
+    PolicyGRID-R         MO=0.879  kWh=0.42  DH=1.242  Viol=65.9%
+    MPC_Linear           MO=0.874  kWh=0.46  DH=0.072  Viol=11.4%
+    MPC_Neural           MO=0.880  kWh=0.58  DH=0.003  Viol=1.1%
+    C-MBPO               MO=0.881  kWh=0.92  DH=0.001  Viol=0.3%
+    DDPC_Behavioral      MO=0.904  kWh=0.61  DH=1.122  Viol=51.1%
+    DDPC_Subspace        MO=0.888  kWh=0.27  DH=0.836  Viol=56.7%
+    DDPC_Neural          MO=0.871  kWh=0.91  DH=0.000  Viol=0.3%
+    PID                  MO=0.860  kWh=2.37  DH=0.000  Viol=0.0%
+
+  ε=1.5:
+    PolicyGRID           MO=0.891  kWh=0.44  DH=1.207  Viol=47.8%
+    PolicyGRID-O         MO=0.918  kWh=0.67  DH=0.576  Viol=36.7%
+    PolicyGRID-R         MO=0.902  kWh=0.42  DH=0.340  Viol=33.0%
+    MPC_Linear           MO=0.877  kWh=0.46  DH=0.006  Viol=2.2%
+    MPC_Neural           MO=0.874  kWh=0.47  DH=0.015  Viol=3.6%
+    C-MBPO               MO=0.882  kWh=0.91  DH=0.002  Viol=0.8%
+    DDPC_Behavioral      MO=0.896  kWh=0.44  DH=1.644  Viol=45.8%
+    DDPC_Subspace        MO=0.877  kWh=0.25  DH=1.689  Viol=54.7%
+    DDPC_Neural          MO=0.865  kWh=0.91  DH=0.002  Viol=0.8%
+    PID                  MO=0.861  kWh=2.38  DH=0.000  Viol=0.0%
+
+  ε=2.0:
+    PolicyGRID           MO=0.897  kWh=0.42  DH=1.286  Viol=35.6%
+    PolicyGRID-O         MO=0.904  kWh=0.67  DH=0.889  Viol=44.2%
+    PolicyGRID-R         MO=0.915  kWh=0.43  DH=0.089  Viol=19.2%
+    MPC_Linear           MO=0.876  kWh=0.46  DH=0.033  Viol=9.4%
+    MPC_Neural           MO=0.870  kWh=0.43  DH=0.097  Viol=10.8%
+    C-MBPO               MO=0.875  kWh=0.93  DH=0.000  Viol=0.3%
+    DDPC_Behavioral      MO=0.893  kWh=0.29  DH=1.049  Viol=45.5%
+    DDPC_Subspace        MO=0.879  kWh=0.18  DH=0.594  Viol=53.3%
+    DDPC_Neural          MO=0.870  kWh=0.90  DH=0.003  Viol=0.8%
+    PID                  MO=0.863  kWh=2.35  DH=0.000  Viol=0.0%
+
+HYPERVOLUME
+----------------------------------------
+  PolicyGRID             HV=0.888
+  PolicyGRID-O           HV=0.801
+  PolicyGRID-R           HV=0.886
+  MPC_Linear             HV=0.895
+  MPC_Neural             HV=0.902
+  C-MBPO                 HV=0.800
+  DDPC_Behavioral        HV=0.757
+  DDPC_Subspace          HV=0.777
+  DDPC_Neural            HV=0.797
+  PID                    HV=0.471
+
+COMPUTE RESOURCES (M5)
+----------------------------------------
+  Total wall-clock: 524.5 minutes
+  Peak memory: 832.2 MB
+  Seeds: 1
+  Per-phase timing:
+    discovery: 56.1 min
+    benchmark_discovery: 24.5 min
+    monitoring: 15.0 min
+    policy: 401.9 min
+    ablation: 0.2 min
+    M3a_attribution: 3.9 min
+    A2_regime_recovery: 0.8 min
+    N2_wrong_prior: 19.8 min
+    discovery_detail: total_interventions=1576, interventions_per_seed=[1576], total_time_s=3365.8, time_per_seed_s=[3365.8], n_seeds=1
+    simulator: total_sim_steps=5760, sim_step_cost_ms=18, estimated_sim_time_s=103.7
+    interventions: total_interventions=1576, avg_sim_steps_per_intervention=3, llm_calls_per_intervention=1
+    memory_snapshot: peak_mb=832.2
+    posthoc: 2.2 min
+  LLM model: gpt-3.5-turbo
+  LLM calls: 23
+  LLM tokens: 14627 (prompt=11270, completion=3357)
+  Platform: macOS-26.3.1-arm64-arm-64bit
+  CPUs: 10

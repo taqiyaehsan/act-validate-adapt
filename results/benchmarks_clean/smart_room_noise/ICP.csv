@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0,0.75,16,0.0,0.0,10,0,10,6,6,4,0,42,ICP,smart_room_noise,
+0,0.75,16,0.0,0.0,10,0,10,6,6,4,0,123,ICP,smart_room_noise,
+0,0.75,16,0.0,0.0,10,0,10,6,6,4,0,456,ICP,smart_room_noise,
+0,0.75,16,0.0,0.0,10,0,10,6,6,4,0,789,ICP,smart_room_noise,
+0,0.75,16,0.0,0.0,10,0,10,6,6,4,0,999,ICP,smart_room_noise,

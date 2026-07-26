@@ -1,0 +1,54 @@
+{
+  "n_seeds": 3,
+  "majority_threshold": 2,
+  "consensus_edges": [
+    [
+      "energyconsumption",
+      "satisfaction"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "satisfaction",
+      "energyconsumption"
+    ],
+    [
+      "pmv",
+      "satisfaction"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ]
+  ],
+  "consensus_metrics": {
+    "f1": 0.3333,
+    "precision": 0.6,
+    "recall": 0.2308,
+    "shd": 12,
+    "n_edges": 5,
+    "tp": 3,
+    "fp": 2,
+    "fn": 10
+  },
+  "edge_frequency": {
+    "pmv->temperature": 3,
+    "satisfaction->energyconsumption": 3,
+    "humidity->satisfaction": 2,
+    "energyconsumption->satisfaction": 2,
+    "pmv->satisfaction": 2,
+    "energyconsumption->temperature": 1,
+    "energyconsumption->humidity": 1,
+    "energyconsumption->airquality": 1,
+    "satisfaction->airquality": 1,
+    "pmv->energyconsumption": 1
+  },
+  "pairwise_jaccard": 0.4,
+  "per_seed_jaccard": [
+    0.2,
+    0.3333,
+    0.6667
+  ]
+}

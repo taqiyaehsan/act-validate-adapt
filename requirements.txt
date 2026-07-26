@@ -1,0 +1,41 @@
+# PolicyGRID — Python Dependencies
+# Install: pip install -r requirements.txt
+#
+# Tested with Python 3.12 on macOS (Darwin 25.x)
+# Note: cdt (SAM algorithm) may require R + bnlearn for full functionality.
+
+# ── Core scientific stack ────────────────────────────────────────────────────
+numpy>=2.1
+pandas>=2.2
+scipy>=1.15
+scikit-learn>=1.6
+statsmodels>=0.14
+
+# ── Causal discovery algorithms ──────────────────────────────────────────────
+causal-learn>=0.1.4        # PC algorithm (constraint-based)
+lingam>=1.11               # VARLiNGAM (time-series causal discovery)
+cdt>=0.6.0                 # SAM algorithm (score-based); requires PyTorch
+gies>=0.0.3                # GIES (interventional score-based)
+
+# ── Deep learning (for SAM/cdt + DDPC_Neural baseline) ──────────────────────
+torch>=2.6
+
+# ── Graph & visualisation ───────────────────────────────────────────────────
+networkx>=3.4
+matplotlib>=3.10
+seaborn>=0.13
+pyvis>=0.3                 # Interactive DAG visualisation
+graphviz>=0.20             # DAG rendering (requires system graphviz)
+
+# ── Domain-specific (smart building) ────────────────────────────────────────
+pythermalcomfort>=3.0       # ASHRAE-55 PMV/PPD thermal comfort metrics
+eppy>=0.5                  # EnergyPlus IDF file parsing (optional)
+
+# ── LLM hypothesis generator ────────────────────────────────────────────────
+requests>=2.32             # OpenAI API calls (via src/gpt_client.py)
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0         # .env file loading (API keys, paths)
+joblib>=1.4                # Model serialization (RF regime predictor)
+tqdm>=4.67                 # Progress bars
+psutil>=7.0                # Process management (simulator lifecycle)

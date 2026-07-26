@@ -1,0 +1,146 @@
+{
+  "seed": 123,
+  "validated_edges": [
+    [
+      "satisfaction",
+      "outdoortemp"
+    ],
+    [
+      "outdoortemp",
+      "solarradiation"
+    ],
+    [
+      "solarradiation",
+      "lightlevel"
+    ],
+    [
+      "solarradiation",
+      "pmv"
+    ],
+    [
+      "occupancy",
+      "co2"
+    ],
+    [
+      "solarradiation",
+      "occupancy"
+    ],
+    [
+      "hvacpower",
+      "energyconsumption"
+    ],
+    [
+      "outdoortemp",
+      "noisedb"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "satisfaction",
+      "airquality"
+    ],
+    [
+      "occupancy",
+      "lightlevel"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ],
+    [
+      "outdoortemp",
+      "satisfaction"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "outdoortemp",
+      "temperature"
+    ],
+    [
+      "solarradiation",
+      "windowposition"
+    ],
+    [
+      "lightingpower",
+      "lightlevel"
+    ],
+    [
+      "co2",
+      "satisfaction"
+    ],
+    [
+      "airquality",
+      "satisfaction"
+    ],
+    [
+      "windowposition",
+      "solarradiation"
+    ],
+    [
+      "satisfaction",
+      "humidity"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "temperature",
+      "airquality"
+    ],
+    [
+      "humidity",
+      "airquality"
+    ],
+    [
+      "outdoortemp",
+      "pmv"
+    ],
+    [
+      "occupancy",
+      "windowposition"
+    ],
+    [
+      "solarradiation",
+      "temperature"
+    ],
+    [
+      "satisfaction",
+      "noisedb"
+    ],
+    [
+      "windowposition",
+      "temperature"
+    ],
+    [
+      "occupancy",
+      "noisedb"
+    ],
+    [
+      "windowposition",
+      "co2"
+    ],
+    [
+      "pmv",
+      "solarradiation"
+    ],
+    [
+      "HVACPower",
+      "AirQuality"
+    ]
+  ],
+  "f1": 0.4194,
+  "precision": 0.3939,
+  "recall": 0.4483,
+  "shd": 36,
+  "n_edges": 33,
+  "tp": 13,
+  "fp": 20,
+  "fn": 16,
+  "time_s": 67908.9
+}
