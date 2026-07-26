@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.2857,0.5714,10,0.25,0.3333,8,2,6,4,4,4,2,42,JCI,smart_room_hidden_vars,
+0.2667,0.6667,11,0.2222,0.3333,9,2,7,4,5,4,1,123,JCI,smart_room_hidden_vars,
+0.2857,0.5714,10,0.25,0.3333,8,2,6,4,4,4,2,456,JCI,smart_room_hidden_vars,
+0.2857,0.5714,10,0.25,0.3333,8,2,6,4,4,4,2,789,JCI,smart_room_hidden_vars,
+0.2857,0.5714,10,0.25,0.3333,8,2,6,4,4,4,2,999,JCI,smart_room_hidden_vars,

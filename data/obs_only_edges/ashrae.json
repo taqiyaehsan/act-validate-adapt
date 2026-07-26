@@ -1,0 +1,53 @@
+{
+  "dataset": "ashrae",
+  "data_path": "data/ashrae_data_processed.csv",
+  "columns": [
+    "air_temperature",
+    "dew_temperature",
+    "sea_level_pressure",
+    "meter_reading",
+    "square_feet",
+    "year_built"
+  ],
+  "union_edges": [
+    [
+      "air_temperature",
+      "dew_temperature"
+    ],
+    [
+      "air_temperature",
+      "meter_reading"
+    ],
+    [
+      "dew_temperature",
+      "air_temperature"
+    ],
+    [
+      "meter_reading",
+      "year_built"
+    ]
+  ],
+  "method_edges": {
+    "PC": [
+      [
+        "air_temperature",
+        "dew_temperature"
+      ],
+      [
+        "air_temperature",
+        "meter_reading"
+      ],
+      [
+        "meter_reading",
+        "year_built"
+      ]
+    ],
+    "SAM": [
+      [
+        "dew_temperature",
+        "air_temperature"
+      ]
+    ]
+  },
+  "n_union": 4
+}

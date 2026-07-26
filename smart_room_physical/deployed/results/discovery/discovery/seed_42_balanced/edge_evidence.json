@@ -1,0 +1,98 @@
+{
+  "AirQuality->Satisfaction": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.2514,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.059,
+    "threshold": 0.042
+  },
+  "Temperature->WindowState": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.0839,
+    "partial_p": 2e-06,
+    "weighted_consensus": 0.059,
+    "threshold": 0.042
+  },
+  "Temperature->AirQuality": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.5712,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.097,
+    "threshold": 0.042
+  },
+  "Humidity->Satisfaction": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.1901,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.088,
+    "threshold": 0.042
+  },
+  "AirQuality->Humidity": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.9061,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.068,
+    "threshold": 0.042
+  },
+  "Temperature->Satisfaction": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.5713,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.097,
+    "threshold": 0.042
+  },
+  "AirQuality->Temperature": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.5712,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.068,
+    "threshold": 0.042
+  },
+  "Humidity->Temperature": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.7807,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.068,
+    "threshold": 0.042
+  },
+  "Temperature->EnergyConsumption": {
+    "validated": false,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.1478,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.088,
+    "threshold": 0.042
+  },
+  "Humidity->WindowState": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.584,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.068,
+    "threshold": 0.042
+  },
+  "Humidity->AirQuality": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": -0.9061,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.127,
+    "threshold": 0.042
+  },
+  "AirQuality->WindowState": {
+    "validated": true,
+    "method": "rescue_phase2.4",
+    "partial_r": 0.7104,
+    "partial_p": 0.0,
+    "weighted_consensus": 0.127,
+    "threshold": 0.042
+  }
+}

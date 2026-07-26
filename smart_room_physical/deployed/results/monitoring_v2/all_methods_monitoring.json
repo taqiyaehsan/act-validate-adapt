@@ -1,0 +1,104 @@
+{
+  "strategy_a": {
+    "PolicyGRID": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    },
+    "PolicyGRID-O": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    },
+    "PC": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    },
+    "SAM": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    },
+    "GIES": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    },
+    "VARLiNGAM": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    },
+    "LLM-only": {
+      "occ": 64.3,
+      "win": 75.0,
+      "comb": 51.1,
+      "brier_o": 0.2415,
+      "brier_w": 0.2179
+    }
+  },
+  "strategy_b": {
+    "PolicyGRID": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    },
+    "PolicyGRID-O": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    },
+    "PC": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    },
+    "SAM": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    },
+    "GIES": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    },
+    "VARLiNGAM": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    },
+    "LLM-only": {
+      "occ": 66.9,
+      "win": 92.1,
+      "comb": 66.9,
+      "brier_o": 0.2442,
+      "brier_w": 0.2055
+    }
+  }
+}

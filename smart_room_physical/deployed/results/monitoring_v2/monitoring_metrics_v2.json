@@ -1,0 +1,33 @@
+{
+  "best_params": {
+    "mode": "all_features",
+    "sigma": 0.5,
+    "forget": 0.2,
+    "occ": 64.3,
+    "win": 75.0,
+    "comb": 51.1,
+    "brier_o": 0.2415,
+    "brier_w": 0.2179
+  },
+  "strategy_a": {
+    "occ": 64.3,
+    "win": 75.0,
+    "comb": 51.1,
+    "brier_o": 0.2415,
+    "brier_w": 0.2179
+  },
+  "strategy_b": {
+    "occ": 66.9,
+    "win": 92.1,
+    "comb": 66.9,
+    "brier_o": 0.2442,
+    "brier_w": 0.2055
+  },
+  "strategy_c": {
+    "occ": 65.3,
+    "win": 89.6,
+    "comb": 65.3,
+    "brier_o": 0.2448,
+    "brier_w": 0.2196
+  }
+}

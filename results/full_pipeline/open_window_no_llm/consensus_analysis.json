@@ -1,0 +1,94 @@
+{
+  "n_seeds": 3,
+  "majority_threshold": 2,
+  "consensus_edges": [
+    [
+      "energyconsumption",
+      "airquality"
+    ],
+    [
+      "pmv",
+      "energyconsumption"
+    ],
+    [
+      "energyconsumption",
+      "satisfaction"
+    ],
+    [
+      "satisfaction",
+      "pmv"
+    ],
+    [
+      "energyconsumption",
+      "humidity"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "energyconsumption",
+      "temperature"
+    ],
+    [
+      "satisfaction",
+      "temperature"
+    ],
+    [
+      "satisfaction",
+      "energyconsumption"
+    ],
+    [
+      "satisfaction",
+      "humidity"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "windowopen",
+      "energyconsumption"
+    ],
+    [
+      "satisfaction",
+      "airquality"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ]
+  ],
+  "consensus_metrics": {
+    "f1": 0.2222,
+    "precision": 0.2143,
+    "recall": 0.2308,
+    "shd": 21,
+    "n_edges": 14,
+    "tp": 3,
+    "fp": 11,
+    "fn": 10
+  },
+  "edge_frequency": {
+    "energyconsumption->airquality": 3,
+    "pmv->energyconsumption": 3,
+    "satisfaction->pmv": 3,
+    "windowopen->energyconsumption": 3,
+    "energyconsumption->temperature": 3,
+    "satisfaction->temperature": 3,
+    "satisfaction->energyconsumption": 3,
+    "humidity->satisfaction": 3,
+    "satisfaction->humidity": 3,
+    "pmv->temperature": 3,
+    "energyconsumption->humidity": 3,
+    "satisfaction->airquality": 3,
+    "energyconsumption->satisfaction": 2,
+    "temperature->satisfaction": 2
+  },
+  "pairwise_jaccard": 0.9048,
+  "per_seed_jaccard": [
+    1.0,
+    0.8571,
+    0.8571
+  ]
+}

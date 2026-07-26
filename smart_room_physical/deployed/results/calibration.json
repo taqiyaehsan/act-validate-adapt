@@ -1,0 +1,113 @@
+{
+  "Heater": {
+    "Temperature": {
+      "pre_mean": 25.2,
+      "post_mean": 25.55,
+      "delta": 0.35,
+      "abs_delta": 0.35,
+      "onset_min": 15
+    },
+    "Humidity": {
+      "pre_mean": 12.3,
+      "post_mean": 12.35,
+      "delta": 0.05,
+      "abs_delta": 0.05,
+      "onset_min": 3
+    },
+    "AirQuality": {
+      "pre_mean": 63.967,
+      "post_mean": 59.367,
+      "delta": -4.6,
+      "abs_delta": 4.6,
+      "onset_min": 12
+    },
+    "EnergyConsumption": {
+      "pre_mean": 0.0,
+      "post_mean": 506.804,
+      "delta": 506.804,
+      "abs_delta": 506.804,
+      "onset_min": 1
+    },
+    "Satisfaction": {
+      "pre_mean": 46.9,
+      "post_mean": 52.5,
+      "delta": 5.6,
+      "abs_delta": 5.6,
+      "onset_min": 15
+    }
+  },
+  "Humidifier": {
+    "Temperature": {
+      "pre_mean": 25.65,
+      "post_mean": 25.367,
+      "delta": -0.283,
+      "abs_delta": 0.283,
+      "onset_min": 21
+    },
+    "Humidity": {
+      "pre_mean": 12.4,
+      "post_mean": 13.15,
+      "delta": 0.75,
+      "abs_delta": 0.75,
+      "onset_min": 21
+    },
+    "AirQuality": {
+      "pre_mean": 64.667,
+      "post_mean": 65.8,
+      "delta": 1.133,
+      "abs_delta": 1.133,
+      "onset_min": 1
+    },
+    "EnergyConsumption": {
+      "pre_mean": 0.0,
+      "post_mean": 9.076,
+      "delta": 9.076,
+      "abs_delta": 9.076,
+      "onset_min": 1
+    },
+    "Satisfaction": {
+      "pre_mean": 54.2,
+      "post_mean": 49.567,
+      "delta": -4.633,
+      "abs_delta": 4.633,
+      "onset_min": 21
+    }
+  },
+  "Fan": {
+    "Temperature": {
+      "pre_mean": 25.3,
+      "post_mean": 24.533,
+      "delta": -0.767,
+      "abs_delta": 0.767,
+      "onset_min": 12
+    },
+    "Humidity": {
+      "pre_mean": 12.75,
+      "post_mean": 12.483,
+      "delta": -0.267,
+      "abs_delta": 0.267,
+      "onset_min": 2
+    },
+    "AirQuality": {
+      "pre_mean": 68.567,
+      "post_mean": 71.0,
+      "delta": 2.433,
+      "abs_delta": 2.433,
+      "onset_min": 16
+    },
+    "EnergyConsumption": {
+      "pre_mean": 0.0,
+      "post_mean": 23.47,
+      "delta": 23.47,
+      "abs_delta": 23.47,
+      "onset_min": 1
+    },
+    "Satisfaction": {
+      "pre_mean": 48.5,
+      "post_mean": 36.0,
+      "delta": -12.5,
+      "abs_delta": 12.5,
+      "onset_min": 12
+    }
+  }
+}

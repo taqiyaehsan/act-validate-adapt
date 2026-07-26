@@ -1,0 +1,9 @@
+{
+  "n_validated": 10,
+  "n_rescued": 6,
+  "n_total": 16,
+  "gt_f1": 0.4,
+  "gt_precision": 0.375,
+  "gt_recall": 0.429,
+  "gt_shd": 18
+}

@@ -1,0 +1,1 @@
+[["Temperature", "PMV"], ["Humidity", "AirQuality"], ["Humidity", "PMV"], ["AirQuality", "PMV"], ["AirQuality", "EnergyConsumption"], ["PMV", "Satisfaction"], ["PMV", "EnergyConsumption"], ["WindowOpen", "Temperature"], ["OutdoorTemperature", "Temperature"], ["OutdoorTemperature", "Humidity"]]

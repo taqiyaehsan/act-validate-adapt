@@ -1,0 +1,114 @@
+{
+  "strategy_a": {
+    "PolicyGRID": {
+      "occ": 59.7,
+      "win": 75.4,
+      "comb": 48.6,
+      "brier_o": 0.2501,
+      "brier_w": 0.2021,
+      "sigma": 0.5,
+      "forget": 0.12
+    },
+    "PolicyGRID-O": {
+      "occ": 60.5,
+      "win": 75.5,
+      "comb": 60.1,
+      "brier_o": 0.2515,
+      "brier_w": 0.2297,
+      "sigma": 0.5,
+      "forget": 0.2
+    },
+    "PC": {
+      "occ": 51.4,
+      "win": 43.7,
+      "comb": 28.8,
+      "brier_o": 0.3222,
+      "brier_w": 0.3638,
+      "sigma": 10.0,
+      "forget": 0.2
+    },
+    "SAM": {
+      "occ": 60.4,
+      "win": 75.3,
+      "comb": 59.8,
+      "brier_o": 0.255,
+      "brier_w": 0.2019,
+      "sigma": 0.5,
+      "forget": 0.12
+    },
+    "GIES": {
+      "occ": 64.1,
+      "win": 67.8,
+      "comb": 59.2,
+      "brier_o": 0.2421,
+      "brier_w": 0.2434,
+      "sigma": 0.5,
+      "forget": 0.12
+    },
+    "VARLiNGAM": {
+      "occ": 62.0,
+      "win": 75.4,
+      "comb": 60.9,
+      "brier_o": 0.2466,
+      "brier_w": 0.2027,
+      "sigma": 0.5,
+      "forget": 0.12
+    }
+  },
+  "strategy_b": {
+    "PolicyGRID": {
+      "occ": 42.9,
+      "win": 46.4,
+      "comb": 19.4,
+      "brier_o": 0.3188,
+      "brier_w": 0.3493,
+      "sigma": 10.0,
+      "forget": 0.12
+    },
+    "PolicyGRID-O": {
+      "occ": 65.3,
+      "win": 94.5,
+      "comb": 65.3,
+      "brier_o": 0.2357,
+      "brier_w": 0.1909,
+      "sigma": 0.5,
+      "forget": 0.12
+    },
+    "PC": {
+      "occ": 67.8,
+      "win": 46.4,
+      "comb": 43.4,
+      "brier_o": 0.2347,
+      "brier_w": 0.2508,
+      "sigma": 2.0,
+      "forget": 0.2
+    },
+    "SAM": {
+      "occ": 66.9,
+      "win": 96.7,
+      "comb": 66.9,
+      "brier_o": 0.2345,
+      "brier_w": 0.1745,
+      "sigma": 0.5,
+      "forget": 0.12
+    },
+    "GIES": {
+      "occ": 66.1,
+      "win": 93.4,
+      "comb": 66.1,
+      "brier_o": 0.2329,
+      "brier_w": 0.2097,
+      "sigma": 0.5,
+      "forget": 0.12
+    },
+    "VARLiNGAM": {
+      "occ": 65.3,
+      "win": 92.6,
+      "comb": 65.3,
+      "brier_o": 0.2514,
+      "brier_w": 0.1862,
+      "sigma": 0.5,
+      "forget": 0.12
+    }
+  }
+}

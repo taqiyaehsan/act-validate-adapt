@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.5714,0.5714,6,0.5,0.6667,8,4,4,2,4,4,2,42,GIES,smart_room,
+0.6667,0.6667,5,0.5556,0.8333,9,5,4,1,5,4,1,123,GIES,smart_room,
+0.4286,0.5714,8,0.375,0.5,8,3,5,3,4,4,2,456,GIES,smart_room,
+0.4286,0.5714,8,0.375,0.5,8,3,5,3,4,4,2,789,GIES,smart_room,
+0.5714,0.5714,6,0.5,0.6667,8,4,4,2,4,4,2,999,GIES,smart_room,

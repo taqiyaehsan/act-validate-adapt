@@ -1,0 +1,56 @@
+{
+  "n_seeds": 5,
+  "majority_threshold": 3,
+  "consensus_edges": [
+    [
+      "air_temperature",
+      "meter_reading"
+    ],
+    [
+      "square_feet",
+      "meter_reading"
+    ],
+    [
+      "air_temperature",
+      "dew_temperature"
+    ],
+    [
+      "dew_temperature",
+      "meter_reading"
+    ],
+    [
+      "year_built",
+      "meter_reading"
+    ]
+  ],
+  "consensus_metrics": {
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "shd": 0,
+    "n_edges": 5,
+    "tp": 5,
+    "fp": 0,
+    "fn": 0
+  },
+  "edge_frequency": {
+    "air_temperature->meter_reading": 5,
+    "square_feet->meter_reading": 5,
+    "air_temperature->dew_temperature": 5,
+    "dew_temperature->meter_reading": 5,
+    "year_built->meter_reading": 5
+  },
+  "pairwise_jaccard": 1.0,
+  "per_seed_jaccard": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "n_seeds": 3,
+  "majority_threshold": 2,
+  "consensus_edges": [
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "outdoortemp",
+      "solarradiation"
+    ],
+    [
+      "lightingpower",
+      "lightlevel"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ],
+    [
+      "hvacpower",
+      "airquality"
+    ],
+    [
+      "outdoortemp",
+      "noisedb"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "occupancy",
+      "windowposition"
+    ],
+    [
+      "co2",
+      "satisfaction"
+    ],
+    [
+      "hvacpower",
+      "energyconsumption"
+    ]
+  ],
+  "consensus_metrics": {
+    "f1": 0.3077,
+    "precision": 0.6,
+    "recall": 0.2069,
+    "shd": 27,
+    "n_edges": 10,
+    "tp": 6,
+    "fp": 4,
+    "fn": 23
+  },
+  "edge_frequency": {
+    "temperature->pmv": 3,
+    "outdoortemp->solarradiation": 3,
+    "lightingpower->lightlevel": 3,
+    "temperature->satisfaction": 3,
+    "occupancy->windowposition": 3,
+    "hvacpower->energyconsumption": 3,
+    "hvacpower->airquality": 2,
+    "outdoortemp->noisedb": 2,
+    "humidity->satisfaction": 2,
+    "co2->satisfaction": 2,
+    "humidity->airquality": 1
+  },
+  "pairwise_jaccard": 0.6879,
+  "per_seed_jaccard": [
+    0.6364,
+    0.7,
+    0.7273
+  ]
+}

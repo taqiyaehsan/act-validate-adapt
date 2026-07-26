@@ -1,0 +1,59 @@
+{
+ "nodes": [
+  "Temperature",
+  "Humidity",
+  "AirQuality",
+  "PMV",
+  "EnergyConsumption",
+  "Satisfaction",
+  "WindowOpen",
+  "OutdoorTemperature"
+ ],
+ "edges": [
+  [
+   "Temperature",
+   "PMV"
+  ],
+  [
+   "Humidity",
+   "AirQuality"
+  ],
+  [
+   "OutdoorTemperature",
+   "Temperature"
+  ],
+  [
+   "OutdoorTemperature",
+   "Humidity"
+  ],
+  [
+   "OutdoorTemperature",
+   "AirQuality"
+  ],
+  [
+   "OutdoorTemperature",
+   "PMV"
+  ],
+  [
+   "PMV",
+   "Satisfaction"
+  ],
+  [
+   "PMV",
+   "EnergyConsumption"
+  ],
+  [
+   "WindowOpen",
+   "Temperature"
+  ],
+  [
+   "WindowOpen",
+   "Humidity"
+  ],
+  [
+   "WindowOpen",
+   "AirQuality"
+  ]
+ ],
+ "_source": "raw LLM response, open_window no_sam grid, seed 42 (from run logs)"
+}

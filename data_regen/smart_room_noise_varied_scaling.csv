@@ -1,0 +1,6 @@
+feature,data_min,data_max
+Temperature,18.0,30.0
+Humidity,30.0,70.0
+AirQuality,150.0,500.0
+EnergyConsumption,78.20693440452082,92.1729530107508
+Satisfaction,36.16942477413219,73.72094534269513

@@ -1,0 +1,22 @@
+method,target,comfort_weight,heater,humidifier,fan,predicted_sat,predicted_energy
+PolicyGRID,eps=0.5 (energy),0.3,0.0,0.0,0.0,0.2111,0.0074
+C-MBPO,eps=0.5 (energy),0.3,0.0,0.0,0.0,0.2111,0.0074
+MPC_Linear,eps=0.5 (energy),0.3,0.0,0.0,0.0,0.2111,0.0074
+DDPC_Behavioral,eps=0.5 (energy),0.3,0.0,0.0,0.0,0.2111,0.0074
+PID,eps=0.5 (energy),0.3,1.0,0.0,0.0,0.4394,0.9008
+All-OFF,eps=0.5 (energy),0.3,0.0,0.0,0.0,0.2111,0.0074
+All-ON,eps=0.5 (energy),0.3,1.0,1.0,1.0,0.4882,0.946
+PolicyGRID,eps=1.0 (balanced),0.5,0.0,0.0,1.0,0.2599,0.0526
+C-MBPO,eps=1.0 (balanced),0.5,0.0,0.0,1.0,0.2599,0.0526
+MPC_Linear,eps=1.0 (balanced),0.5,0.0,0.0,0.0,0.2111,0.0074
+DDPC_Behavioral,eps=1.0 (balanced),0.5,0.0,0.0,0.0,0.2111,0.0074
+PID,eps=1.0 (balanced),0.5,1.0,0.0,0.0,0.4394,0.9008
+All-OFF,eps=1.0 (balanced),0.5,0.0,0.0,0.0,0.2111,0.0074
+All-ON,eps=1.0 (balanced),0.5,1.0,1.0,1.0,0.4882,0.946
+PolicyGRID,eps=2.0 (comfort),0.8,1.0,0.0,1.0,0.4882,0.946
+C-MBPO,eps=2.0 (comfort),0.8,1.0,0.0,1.0,0.4882,0.946
+MPC_Linear,eps=2.0 (comfort),0.8,0.0,0.0,0.0,0.2111,0.0074
+DDPC_Behavioral,eps=2.0 (comfort),0.8,0.0,0.0,0.0,0.2111,0.0074
+PID,eps=2.0 (comfort),0.8,1.0,0.0,0.0,0.4394,0.9008
+All-OFF,eps=2.0 (comfort),0.8,0.0,0.0,0.0,0.2111,0.0074
+All-ON,eps=2.0 (comfort),0.8,1.0,1.0,1.0,0.4882,0.946

@@ -1,0 +1,2 @@
+seed,n_bad_injected,n_bad_survived,n_bad_pruned,prune_rate,bad_survived_edges,n_validated_total,gt_recovered,f1
+42,10,3,7,0.7,"[('energyconsumption', 'temperature'), ('pmv', 'hvacpower'), ('satisfaction', 'hvacpower')]",40,14,0.406

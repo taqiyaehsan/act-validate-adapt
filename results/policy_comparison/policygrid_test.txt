@@ -1,0 +1,55 @@
+23:02:42 Data: (11520, 15), edges: 51 val, 93 obs
+23:02:43 
+=== PolicyGRID ===
+23:02:43 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+23:02:43 PolicyEngine init: 51 edges, SEMs for ['AirQuality', 'NoiseDB', 'Satisfaction', 'LightLevel', 'Temperature', 'PMV', 'WindowPosition', 'SolarRadiation', 'EnergyConsumption', 'Humidity', 'OutdoorTemp', 'CO2', 'HVACPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+23:02:46   ε=0.5 run0: kWh=7.98, Sat=82.6, MO=0.606
+23:02:48   ε=0.5 run1: kWh=7.98, Sat=82.7, MO=0.606
+23:02:50   ε=0.5 run2: kWh=7.98, Sat=82.7, MO=0.606
+23:02:50 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+23:02:50 PolicyEngine init: 51 edges, SEMs for ['AirQuality', 'NoiseDB', 'Satisfaction', 'LightLevel', 'Temperature', 'PMV', 'WindowPosition', 'SolarRadiation', 'EnergyConsumption', 'Humidity', 'OutdoorTemp', 'CO2', 'HVACPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+23:02:52   ε=0.8 run0: kWh=0.04, Sat=78.5, MO=0.869
+23:02:55   ε=0.8 run1: kWh=0.04, Sat=73.4, MO=0.839
+23:02:57   ε=0.8 run2: kWh=0.04, Sat=75.7, MO=0.852
+23:02:57 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+23:02:57 PolicyEngine init: 51 edges, SEMs for ['AirQuality', 'NoiseDB', 'Satisfaction', 'LightLevel', 'Temperature', 'PMV', 'WindowPosition', 'SolarRadiation', 'EnergyConsumption', 'Humidity', 'OutdoorTemp', 'CO2', 'HVACPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+23:02:59   ε=1.0 run0: kWh=0.04, Sat=73.6, MO=0.840
+23:03:01   ε=1.0 run1: kWh=0.04, Sat=73.3, MO=0.838
+23:03:04   ε=1.0 run2: kWh=0.04, Sat=76.8, MO=0.859
+23:03:04 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+23:03:04 PolicyEngine init: 51 edges, SEMs for ['AirQuality', 'NoiseDB', 'Satisfaction', 'LightLevel', 'Temperature', 'PMV', 'WindowPosition', 'SolarRadiation', 'EnergyConsumption', 'Humidity', 'OutdoorTemp', 'CO2', 'HVACPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+23:03:06   ε=1.5 run0: kWh=0.04, Sat=74.6, MO=0.846
+23:03:08   ε=1.5 run1: kWh=0.04, Sat=78.7, MO=0.870
+23:03:10   ε=1.5 run2: kWh=0.04, Sat=76.2, MO=0.855
+23:03:10 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0004 → +0.0004 (intervention says +)
+23:03:10 PolicyEngine init: 51 edges, SEMs for ['AirQuality', 'NoiseDB', 'Satisfaction', 'LightLevel', 'Temperature', 'PMV', 'WindowPosition', 'SolarRadiation', 'EnergyConsumption', 'Humidity', 'OutdoorTemp', 'CO2', 'HVACPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.918
+23:03:13   ε=2.0 run0: kWh=0.04, Sat=76.5, MO=0.857
+23:03:15   ε=2.0 run1: kWh=0.04, Sat=75.5, MO=0.852
+23:03:17   ε=2.0 run2: kWh=0.04, Sat=76.1, MO=0.855
+23:03:17 
+=== PolicyGRID-O ===
+23:03:17 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+23:03:17 PolicyEngine init: 93 edges, SEMs for ['Humidity', 'PMV', 'Temperature', 'OutdoorTemp', 'NoiseDB', 'Satisfaction', 'SolarRadiation', 'EnergyConsumption', 'LightLevel', 'HVACPower', 'CO2', 'AirQuality', 'WindowPosition', 'Occupancy', 'LightingPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+23:03:20   ε=0.5 run0: kWh=7.98, Sat=82.8, MO=0.607
+23:03:22   ε=0.5 run1: kWh=7.98, Sat=82.7, MO=0.606
+23:03:24   ε=0.5 run2: kWh=7.98, Sat=82.7, MO=0.606
+23:03:24 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+23:03:24 PolicyEngine init: 93 edges, SEMs for ['Humidity', 'PMV', 'Temperature', 'OutdoorTemp', 'NoiseDB', 'Satisfaction', 'SolarRadiation', 'EnergyConsumption', 'LightLevel', 'HVACPower', 'CO2', 'AirQuality', 'WindowPosition', 'Occupancy', 'LightingPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+23:03:27   ε=0.8 run0: kWh=7.98, Sat=82.6, MO=0.606
+23:03:29   ε=0.8 run1: kWh=7.98, Sat=82.6, MO=0.606
+23:03:32   ε=0.8 run2: kWh=7.98, Sat=82.7, MO=0.606
+23:03:32 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+23:03:32 PolicyEngine init: 93 edges, SEMs for ['Humidity', 'PMV', 'Temperature', 'OutdoorTemp', 'NoiseDB', 'Satisfaction', 'SolarRadiation', 'EnergyConsumption', 'LightLevel', 'HVACPower', 'CO2', 'AirQuality', 'WindowPosition', 'Occupancy', 'LightingPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+23:03:34   ε=1.0 run0: kWh=7.97, Sat=82.7, MO=0.607
+23:03:36   ε=1.0 run1: kWh=7.97, Sat=82.7, MO=0.606
+23:03:39   ε=1.0 run2: kWh=7.97, Sat=82.7, MO=0.607
+23:03:39 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+23:03:39 PolicyEngine init: 93 edges, SEMs for ['Humidity', 'PMV', 'Temperature', 'OutdoorTemp', 'NoiseDB', 'Satisfaction', 'SolarRadiation', 'EnergyConsumption', 'LightLevel', 'HVACPower', 'CO2', 'AirQuality', 'WindowPosition', 'Occupancy', 'LightingPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+23:03:41   ε=1.5 run0: kWh=0.04, Sat=79.3, MO=0.874
+23:03:43   ε=1.5 run1: kWh=0.04, Sat=76.9, MO=0.860
+23:03:46   ε=1.5 run2: kWh=0.04, Sat=74.2, MO=0.844
+23:03:46 Direction constraint: SEM(Temperature).HVACPower β corrected -0.0028 → +0.0028 (intervention says +)
+23:03:46 PolicyEngine init: 93 edges, SEMs for ['Humidity', 'PMV', 'Temperature', 'OutdoorTemp', 'NoiseDB', 'Satisfaction', 'SolarRadiation', 'EnergyConsumption', 'LightLevel', 'HVACPower', 'CO2', 'AirQuality', 'WindowPosition', 'Occupancy', 'LightingPower'], action_vars=['HVACPower', 'LightingPower'], confidence=0.935
+23:03:48   ε=2.0 run0: kWh=0.04, Sat=68.9, MO=0.812
+23:03:50   ε=2.0 run1: kWh=0.04, Sat=77.0, MO=0.860
+23:03:53   ε=2.0 run2: kWh=0.04, Sat=76.7, MO=0.858

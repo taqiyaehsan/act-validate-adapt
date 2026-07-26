@@ -1,0 +1,62 @@
+{
+  "seed": 456,
+  "validated_edges": [
+    [
+      "satisfaction",
+      "pmv"
+    ],
+    [
+      "pmv",
+      "energyconsumption"
+    ],
+    [
+      "satisfaction",
+      "humidity"
+    ],
+    [
+      "temperature",
+      "satisfaction"
+    ],
+    [
+      "satisfaction",
+      "energyconsumption"
+    ],
+    [
+      "windowopen",
+      "energyconsumption"
+    ],
+    [
+      "energyconsumption",
+      "satisfaction"
+    ],
+    [
+      "pmv",
+      "temperature"
+    ],
+    [
+      "humidity",
+      "satisfaction"
+    ],
+    [
+      "pmv",
+      "satisfaction"
+    ],
+    [
+      "temperature",
+      "pmv"
+    ],
+    [
+      "satisfaction",
+      "temperature"
+    ]
+  ],
+  "f1": 0.4,
+  "precision": 0.4167,
+  "recall": 0.3846,
+  "shd": 15,
+  "n_edges": 12,
+  "tp": 5,
+  "fp": 7,
+  "fn": 8,
+  "time_s": 172.1
+}

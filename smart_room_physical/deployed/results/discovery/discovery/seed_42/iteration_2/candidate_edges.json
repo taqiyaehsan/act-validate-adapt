@@ -1,0 +1,177 @@
+{
+  "candidates": [
+    [
+      "Temperature",
+      "Humidity"
+    ],
+    [
+      "Temperature",
+      "AirQuality"
+    ],
+    [
+      "Humidifier",
+      "Fan"
+    ],
+    [
+      "Fan",
+      "Humidity"
+    ],
+    [
+      "Humidifier",
+      "AirQuality"
+    ],
+    [
+      "Satisfaction",
+      "Occupancy"
+    ],
+    [
+      "Occupancy",
+      "WindowState"
+    ],
+    [
+      "Fan",
+      "WindowState"
+    ],
+    [
+      "AirQuality",
+      "Satisfaction"
+    ],
+    [
+      "AirQuality",
+      "WindowState"
+    ],
+    [
+      "Humidifier",
+      "Occupancy"
+    ],
+    [
+      "Humidity",
+      "AirQuality"
+    ],
+    [
+      "Temperature",
+      "Satisfaction"
+    ],
+    [
+      "Temperature",
+      "WindowState"
+    ],
+    [
+      "Humidity",
+      "Satisfaction"
+    ],
+    [
+      "Heater",
+      "EnergyConsumption"
+    ]
+  ],
+  "scores": {
+    "Temperature->Humidity": 0.5,
+    "Temperature->AirQuality": 0.5,
+    "Humidity->AirQuality": 1.0,
+    "Humidifier->Fan": 0.5,
+    "Fan->Humidity": 0.5,
+    "Temperature->Satisfaction": 1.0,
+    "Humidifier->AirQuality": 0.5,
+    "Temperature->WindowState": 1.0,
+    "Satisfaction->Occupancy": 0.5,
+    "Humidity->Satisfaction": 1.0,
+    "Occupancy->WindowState": 0.5,
+    "Heater->EnergyConsumption": 1.0,
+    "Fan->WindowState": 0.5,
+    "AirQuality->Satisfaction": 0.5,
+    "AirQuality->WindowState": 0.5,
+    "Humidifier->Occupancy": 0.5
+  },
+  "methods": {
+    "PC": [
+      [
+        "Temperature",
+        "Humidity"
+      ],
+      [
+        "Temperature",
+        "AirQuality"
+      ],
+      [
+        "Humidity",
+        "AirQuality"
+      ],
+      [
+        "Humidifier",
+        "Fan"
+      ],
+      [
+        "Fan",
+        "Humidity"
+      ],
+      [
+        "Temperature",
+        "Satisfaction"
+      ],
+      [
+        "Humidifier",
+        "AirQuality"
+      ],
+      [
+        "Temperature",
+        "WindowState"
+      ],
+      [
+        "Satisfaction",
+        "Occupancy"
+      ],
+      [
+        "Humidity",
+        "Satisfaction"
+      ],
+      [
+        "Occupancy",
+        "WindowState"
+      ],
+      [
+        "Heater",
+        "EnergyConsumption"
+      ],
+      [
+        "Fan",
+        "WindowState"
+      ],
+      [
+        "AirQuality",
+        "Satisfaction"
+      ],
+      [
+        "AirQuality",
+        "WindowState"
+      ],
+      [
+        "Humidifier",
+        "Occupancy"
+      ]
+    ],
+    "SAM": [
+      [
+        "Heater",
+        "EnergyConsumption"
+      ],
+      [
+        "Temperature",
+        "Satisfaction"
+      ],
+      [
+        "Temperature",
+        "WindowState"
+      ],
+      [
+        "Humidity",
+        "Satisfaction"
+      ],
+      [
+        "Humidity",
+        "AirQuality"
+      ]
+    ]
+  },
+  "n_data_rows": 2107
+}

@@ -1,0 +1,117 @@
+{
+  "open_window": {
+    "edges": [
+      ["windowopen", "temperature"],
+      ["outdoortemperature", "temperature"],
+      ["windowopen", "humidity"],
+      ["windowopen", "airquality"],
+      ["temperature", "pmv"],
+      ["humidity", "pmv"],
+      ["windowopen", "energyconsumption"],
+      ["temperature", "energyconsumption"],
+      ["humidity", "energyconsumption"],
+      ["humidity", "satisfaction"],
+      ["pmv", "satisfaction"],
+      ["airquality", "satisfaction"],
+      ["energyconsumption", "satisfaction"]
+    ]
+  },
+  "smart_room": {
+    "edges": [
+      ["temperature", "energyconsumption"],
+      ["temperature", "satisfaction"],
+      ["humidity", "energyconsumption"],
+      ["humidity", "satisfaction"],
+      ["airquality", "energyconsumption"],
+      ["airquality", "satisfaction"]
+    ]
+  },
+  "hidden_vars": {
+    "edges": [
+      ["humidity", "satisfaction"],
+      ["humidity", "energyconsumption"],
+      ["airquality", "energyconsumption"],
+      ["airquality", "satisfaction"],
+      ["temperature", "energyconsumption"],
+      ["temperature", "satisfaction"]
+    ]
+  },
+  "smart_room_noise": {
+    "edges": [
+      ["humidity", "satisfaction"],
+      ["humidity", "energyconsumption"],
+      ["airquality", "energyconsumption"],
+      ["airquality", "satisfaction"],
+      ["temperature", "energyconsumption"],
+      ["temperature", "satisfaction"]
+    ]
+  },
+  "ashrae": {
+    "edges": [
+      ["square_feet", "meter_reading"],
+      ["air_temperature", "meter_reading"],
+      ["air_temperature", "dew_temperature"],
+      ["dew_temperature", "meter_reading"],
+      ["year_built", "meter_reading"]
+    ]
+  },
+  "smart_building": {
+    "edges": [
+      ["temperature", "hvacpower"],
+      ["humidity", "hvacpower"],
+      ["hvacsetpoint", "hvacpower"],
+      ["occupantcount", "hvacpower"],
+      ["lightinglevel", "lightingpower"],
+      ["occupantcount", "lightingpower"],
+      ["temperature", "thermalcomfort"],
+      ["humidity", "thermalcomfort"],
+      ["lightinglevel", "visualcomfort"],
+      ["airquality", "airqualityindex"],
+      ["temperature", "energyconsumption"],
+      ["humidity", "energyconsumption"],
+      ["hvacsetpoint", "energyconsumption"],
+      ["lightinglevel", "energyconsumption"],
+      ["occupantcount", "energyconsumption"],
+      ["airquality", "energyconsumption"],
+      ["temperature", "overallsatisfaction"],
+      ["humidity", "overallsatisfaction"],
+      ["hvacsetpoint", "overallsatisfaction"],
+      ["lightinglevel", "overallsatisfaction"],
+      ["occupantcount", "overallsatisfaction"],
+      ["airquality", "overallsatisfaction"]
+    ]
+  },
+  "smart_building_rich": {
+    "edges": [
+      ["outdoortemp", "temperature"],
+      ["windowposition", "temperature"],
+      ["occupancy", "temperature"],
+      ["hvacpower", "temperature"],
+      ["windowposition", "humidity"],
+      ["occupancy", "humidity"],
+      ["hvacpower", "humidity"],
+      ["occupancy", "co2"],
+      ["windowposition", "co2"],
+      ["solarradiation", "lightlevel"],
+      ["windowposition", "lightlevel"],
+      ["lightingpower", "lightlevel"],
+      ["occupancy", "noisedb"],
+      ["hvacpower", "noisedb"],
+      ["windowposition", "noisedb"],
+      ["occupancy", "airquality"],
+      ["windowposition", "airquality"],
+      ["hvacpower", "airquality"],
+      ["temperature", "pmv"],
+      ["humidity", "pmv"],
+      ["hvacpower", "energyconsumption"],
+      ["lightingpower", "energyconsumption"],
+      ["humidity", "satisfaction"],
+      ["pmv", "satisfaction"],
+      ["co2", "satisfaction"],
+      ["lightlevel", "satisfaction"],
+      ["noisedb", "satisfaction"],
+      ["airquality", "satisfaction"],
+      ["energyconsumption", "satisfaction"]
+    ]
+  }
+}

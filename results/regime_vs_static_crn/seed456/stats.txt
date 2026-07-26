@@ -1,0 +1,18 @@
+Regime-aware vs static control, SAME validated graph (1 seeds x 3 eps, 1440 steps)
+Cond            eps        Det%           kWh           Sat             MO
+Static          0.5   64.7± nan    45.0± nan    85.4± nan   0.8198±  nan
+Static          1.0   63.4± nan    24.1± nan    81.6± nan   0.8167±  nan
+Static          2.0   62.8± nan     6.0± nan    71.0± nan   0.8811±  nan
+
+RegimeAware     0.5   64.8± nan    45.3± nan    85.4± nan   0.8198±  nan
+RegimeAware     1.0   63.7± nan    24.6± nan    81.8± nan   0.8165±  nan
+RegimeAware     2.0   62.8± nan     6.0± nan    71.0± nan   0.8811±  nan
+
+Oracle          0.5   64.7± nan    45.1± nan    85.4± nan   0.8198±  nan
+Oracle          1.0   63.4± nan    24.3± nan    81.7± nan   0.8167±  nan
+Oracle          2.0   62.8± nan     6.0± nan    71.0± nan   0.8811±  nan
+
+RandomSwitch    0.5   64.7± nan    46.4± nan    85.5± nan   0.8192±  nan
+RandomSwitch    1.0   63.5± nan    26.8± nan    82.4± nan   0.8144±  nan
+RandomSwitch    2.0   62.8± nan     6.0± nan    71.0± nan   0.8811±  nan
+

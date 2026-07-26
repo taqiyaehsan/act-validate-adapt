@@ -1,0 +1,14 @@
+feature,data_min,data_max
+Temperature,20.47,23.66
+Humidity,37.21,52.59
+AirQuality,314.0,478.0
+HVACSetpoint,18.0,28.0
+LightingLevel,0.2,1.0
+OccupantCount,0.0,9.0
+EnergyConsumption,40.8,55.63
+OverallSatisfaction,69.9,76.49
+ThermalComfort,91.01,99.15
+VisualComfort,20.0,100.0
+AirQualityIndex,4.0,37.0
+HVACPower,122.41,166.89
+LightingPower,15.0,75.0

@@ -1,0 +1,77 @@
+{
+  "dataset": "open_window",
+  "data_path": "data/challenge1_data_10k_processed.csv",
+  "columns": [
+    "Temperature",
+    "Humidity",
+    "AirQuality",
+    "PMV",
+    "EnergyConsumption",
+    "Satisfaction"
+  ],
+  "union_edges": [
+    [
+      "AirQuality",
+      "EnergyConsumption"
+    ],
+    [
+      "AirQuality",
+      "Satisfaction"
+    ],
+    [
+      "EnergyConsumption",
+      "Satisfaction"
+    ],
+    [
+      "Humidity",
+      "AirQuality"
+    ],
+    [
+      "PMV",
+      "Temperature"
+    ],
+    [
+      "Temperature",
+      "PMV"
+    ]
+  ],
+  "method_edges": {
+    "PC": [
+      [
+        "AirQuality",
+        "EnergyConsumption"
+      ],
+      [
+        "AirQuality",
+        "Satisfaction"
+      ],
+      [
+        "EnergyConsumption",
+        "Satisfaction"
+      ],
+      [
+        "Humidity",
+        "AirQuality"
+      ],
+      [
+        "Temperature",
+        "PMV"
+      ]
+    ],
+    "SAM": [
+      [
+        "AirQuality",
+        "Satisfaction"
+      ],
+      [
+        "EnergyConsumption",
+        "Satisfaction"
+      ],
+      [
+        "PMV",
+        "Temperature"
+      ]
+    ]
+  },
+  "n_union": 6
+}

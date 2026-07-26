@@ -1,0 +1,9 @@
+timestamp,window_state,occupancy,logged_by,notes
+2026-04-07T03:55:10Z,0,0,manual_app,
+2026-04-07T14:24:18Z,1,1,manual_app,occupant
+2026-04-07T15:56:30Z,1,0,manual_app,occupant left
+2026-04-07T16:04:00Z,1,1,manual_app,occupant
+2026-04-07T16:13:21Z,1,0,manual_app,occupant left
+2026-04-07T19:10:43Z,0,1,manual_app,2 people
+2026-04-07T20:02:12Z,0,1,manual_app,1 person
+2026-04-07T21:03:20Z,0,0,manual_app,Emma left

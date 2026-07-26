@@ -1,0 +1,47 @@
+{
+  "seed": 123,
+  "duration_steps": 5760,
+  "n_scored_steps": 5759,
+  "regime_step_counts": {
+    "base": 2241,
+    "occ": 1229,
+    "win": 726,
+    "full": 1563
+  },
+  "n_validated_edges": 31,
+  "arms": {
+    "monitor": {
+      "combined_accuracy": 68.5,
+      "occ_accuracy": 99.0,
+      "win_accuracy": 69.5,
+      "brier_occ": 0.0133,
+      "brier_win": 0.2616,
+      "mean_transition_delay": 17.4,
+      "median_transition_delay": 1.0,
+      "n_transitions": 79,
+      "n_censored": 33
+    },
+    "logreg": {
+      "combined_accuracy": 67.2,
+      "occ_accuracy": 99.5,
+      "win_accuracy": 67.8,
+      "brier_occ": 0.004,
+      "brier_win": 0.2443,
+      "mean_transition_delay": 13.5,
+      "median_transition_delay": 1.0,
+      "n_transitions": 79,
+      "n_censored": 35
+    },
+    "tree": {
+      "combined_accuracy": 68.6,
+      "occ_accuracy": 100.0,
+      "win_accuracy": 71.1,
+      "brier_occ": 0.0,
+      "brier_win": 0.2876,
+      "mean_transition_delay": 14.6,
+      "median_transition_delay": 1.0,
+      "n_transitions": 79,
+      "n_censored": 35
+    }
+  }
+}

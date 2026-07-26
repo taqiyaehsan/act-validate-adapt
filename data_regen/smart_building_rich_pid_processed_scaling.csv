@@ -1,0 +1,16 @@
+feature,data_min,data_max
+OutdoorTemp,4.0,29.0
+SolarRadiation,0.0,800.0
+Occupancy,0.0,6.0
+WindowPosition,0.0,0.787
+Temperature,19.4,32.0
+Humidity,40.68,75.52
+CO2,381.1,1141.9
+LightLevel,0.0,789.5
+NoiseDB,26.6,51.3
+AirQuality,0.0,100.0
+PMV,-1.283,3.0
+HVACPower,0.0,100.0
+LightingPower,0.011488607475614032,100.0
+EnergyConsumption,6.05,91.87
+Satisfaction,51.13,98.57

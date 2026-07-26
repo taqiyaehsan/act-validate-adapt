@@ -1,0 +1,150 @@
+Timestamp,Temperature,Humidity,AirQuality,HVACSetpoint,LightingLevel,OccupantCount,EnergyConsumption,OverallSatisfaction,ThermalComfort,VisualComfort,AirQualityIndex,HVACPower,LightingPower
+2025-06-08T22:05:49.076Z,22.07,44.19,367,22,0.8,10,50.16,74.3,0.9,0.3,27,150.47,60
+2025-06-08T22:05:52.115Z,25.23,43.9,368,22.4,0.8,8,55.39,74.18,0.64,0.3,27,166.15,60
+2025-06-08T22:05:53.122Z,26.42,44.68,359,22.4,0.8,11,64.17,74.36,0.52,0.3,28,192.51,60
+2025-06-08T22:05:54.124Z,26.42,44.68,359,22.4,0.8,4,62.61,74.39,0.52,0.3,28,187.84,60
+
+(causal_env) user@host machine_causation % node direct_building_test.js
+Initializing energy lookup table...
+Initializing energy lookup table...
+Initializing energy lookup table...
+Initializing energy lookup table...
+Initializing energy lookup table...
+Initialized 5 building zones
+Energy lookup table initialized successfully
+Energy lookup table initialized successfully
+Energy lookup table initialized successfully
+Energy lookup table initialized successfully
+Energy lookup table initialized successfully
+Baseline State: {
+  temperature: 22.07,
+  humidity: 44.19,
+  airQuality: 367,
+  satisfaction: 74.3,
+  energy: 50.16,
+  hvacSetpoint: 22,
+  lightingLevel: 0.8,
+  occupants: 10
+}
+
+--- CHECKING ZONE VARIABLES ---
+Office_1: { temp: 23.35, hvacSetpoint: 22, occupants: 1, satisfaction: 71.6 }
+Office_2: { temp: 22.82, hvacSetpoint: 22, occupants: 1, satisfaction: 77.08 }
+Meeting_1: { temp: 21.97, hvacSetpoint: 22, occupants: 1, satisfaction: 76.01 }
+Lobby: { temp: 20.7, hvacSetpoint: 22, occupants: 7, satisfaction: 75.22 }
+Server_Room: { temp: 21.52, hvacSetpoint: 22, occupants: 0, satisfaction: 71.59 }
+
+--- TESTING INTERVENTION ---
+Time: 2025-06-08T22:05:49.078Z
+Applying interventions: [{"variable":"Temperature","action":"set","value":25,"zoneId":"all"},{"variable":"Humidity","action":"set","value":45,"zoneId":"all"},{"variable":"HVACSetpoint","action":"set","value":24,"zoneId":"Office_1"}]
+Pre-intervention state captured
+Applied intervention: {"variable":"Temperature","action":"set","value":25,"zoneId":"all"}
+Applied intervention: {"variable":"Humidity","action":"set","value":45,"zoneId":"all"}
+Applied intervention: {"variable":"HVACSetpoint","action":"set","value":24,"zoneId":"Office_1"}
+Waiting 3000ms for system stabilization...
+System stabilization complete
+Post-intervention state captured
+
+Intervention Result:
+Pre-intervention: {
+  Timestamp: '2025-06-08T22:05:49.078Z',
+  Temperature: 22.07,
+  Humidity: 44.19,
+  AirQuality: 367,
+  HVACSetpoint: 22,
+  LightingLevel: 0.8,
+  OccupantCount: 10,
+  EnergyConsumption: 50.16,
+  OverallSatisfaction: 74.3,
+  ThermalComfort: 0.9,
+  VisualComfort: 0.3,
+  AirQualityIndex: 27,
+  HVACPower: 150.47,
+  LightingPower: 60,
+  InterventionApplied: false
+}
+Post-intervention: {
+  Timestamp: '2025-06-08T22:05:52.112Z',
+  Temperature: 25,
+  Humidity: 45,
+  AirQuality: 367,
+  HVACSetpoint: 22.4,
+  LightingLevel: 0.8,
+  OccupantCount: 10,
+  EnergyConsumption: 55.78,
+  OverallSatisfaction: 74.19,
+  ThermalComfort: 0.66,
+  VisualComfort: 0.3,
+  AirQualityIndex: 27,
+  HVACPower: 167.35,
+  LightingPower: 60,
+  InterventionApplied: true
+}
+
+--- TESTING MULTIPLE UPDATES ---
+
+Update 1:
+Temperature: 25.23
+Humidity: 43.90
+Energy Consumption: 55.39
+Overall Satisfaction: 74.18
+HVAC Power: 166.15
+Lighting Power: 60.00
+
+Update 2:
+Temperature: 25.40
+Humidity: 44.51
+Energy Consumption: 60.20
+Overall Satisfaction: 74.21
+HVAC Power: 180.61
+Lighting Power: 60.00
+
+Update 3:
+Temperature: 25.93
+Humidity: 44.00
+Energy Consumption: 60.64
+Overall Satisfaction: 74.37
+HVAC Power: 181.93
+Lighting Power: 60.00
+
+Update 4:
+Temperature: 26.11
+Humidity: 43.61
+Energy Consumption: 63.13
+Overall Satisfaction: 74.43
+HVAC Power: 189.39
+Lighting Power: 60.00
+
+Update 5:
+Temperature: 26.42
+Humidity: 44.68
+Energy Consumption: 61.96
+Overall Satisfaction: 74.40
+HVAC Power: 185.88
+Lighting Power: 60.00
+
+--- TESTING DATA LOGGING ---
+Smart building simulation started
+Smart building simulation stopped
+Data Log Count: 4
+Latest Data Entry: {
+  Timestamp: '2025-06-08T22:05:54.124Z',
+  Temperature: 26.42,
+  Humidity: 44.68,
+  AirQuality: 359,
+  HVACSetpoint: 22.4,
+  LightingLevel: 0.8,
+  OccupantCount: 4,
+  EnergyConsumption: 62.61,
+  OverallSatisfaction: 74.39,
+  ThermalComfort: 0.52,
+  VisualComfort: 0.3,
+  AirQualityIndex: 28,
+  HVACPower: 187.84,
+  LightingPower: 60
+}
+
+--- TESTING CSV EXPORT ---
+Data exported to ./test_building_output.csv
+CSV exported to: ./test_building_output.csv
+Smart building simulation cleaned up

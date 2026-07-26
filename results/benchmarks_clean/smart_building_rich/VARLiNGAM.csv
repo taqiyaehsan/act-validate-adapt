@@ -1,0 +1,6 @@
+f1,skel_f1,shd,precision,recall,n_edges,tp,fp,fn,skel_tp,skel_fp,skel_fn,seed,method,env,error
+0.1667,0.4,50,0.1613,0.1724,31,5,26,24,12,19,17,42,VARLiNGAM,smart_building_rich,
+0.3,0.5,42,0.2903,0.3103,31,9,22,20,15,16,14,123,VARLiNGAM,smart_building_rich,
+0.2667,0.5,44,0.2581,0.2759,31,8,23,21,15,16,14,456,VARLiNGAM,smart_building_rich,
+0.2951,0.5246,43,0.2812,0.3103,32,9,23,20,16,16,13,789,VARLiNGAM,smart_building_rich,
+0.3103,0.5172,40,0.3103,0.3103,29,9,20,20,15,14,14,999,VARLiNGAM,smart_building_rich,

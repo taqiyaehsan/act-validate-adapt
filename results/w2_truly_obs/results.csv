@@ -1,0 +1,16 @@
+method,seed,weather,comfort_target,kWh,satisfaction,mean_hvac
+Validated_PID,789,cold,1.0,23.68,86.48,0.147
+Validated_PID,999,cold,1.0,23.81,86.97,0.148
+Validated_PID,123,cold,1.0,23.6,86.47,0.147
+Validated_PID,42,cold,1.0,23.59,86.81,0.147
+Validated_PID,456,cold,1.0,23.62,86.48,0.147
+Validated_PID,42,warm,1.0,23.09,81.09,0.142
+Validated_PID,123,warm,1.0,22.8,81.03,0.14
+Validated_PID,456,warm,1.0,22.85,80.96,0.14
+Validated_PID,789,warm,1.0,22.99,81.02,0.142
+Validated_PID,999,warm,1.0,22.85,80.87,0.14
+Validated_PID,456,mild,1.0,24.48,77.03,0.154
+Validated_PID,42,mild,1.0,24.32,76.84,0.153
+Validated_PID,123,mild,1.0,24.35,76.91,0.153
+Validated_PID,999,mild,1.0,24.24,76.81,0.152
+Validated_PID,789,mild,1.0,24.39,76.91,0.153
