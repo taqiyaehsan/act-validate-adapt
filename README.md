@@ -1,6 +1,8 @@
 # Act, Validate, Adapt: Closing the Causal Discovery–Control Loop
 
-Anonymized code and results artifact for our NeurIPS 2026 submission.
+Code and results for our NeurIPS 2026 paper.
+
+Taqiya Ehsan, Shuren Xia, Jorge Ortiz (Rutgers University)
 
 The framework (called **PolicyGRID** in the paper) treats control actions as experiments: it generates candidate causal edges from observational data (PC + SAM + LLM + VARLiNGAM), validates each edge through do-operator interventions in the environment, rescues non-intervenable edges via back-door-adjusted partial correlation, monitors latent regime changes with factored Bayesian monitors (the monitor distinguishes among known coefficient regimes on the fixed validated graph; it does not detect structural/topology change), and drives multi-objective Pareto control from the validated structural equation model. The same pipeline is deployed on a physical sensor/actuator testbed.
 
@@ -11,7 +13,7 @@ The framework (called **PolicyGRID** in the paper) treats control actions as exp
 
 *Policy note: two evaluation configurations are used. The open-loop Pareto sweep (`run_full_pipeline.py --stages policy`) fits one static engine per method. The closed-loop evaluation (Table 1; `runners/`) runs monitor-in-the-loop: at each step a Bayesian regime posterior selects among four per-regime coefficient sets fitted on the same graph, with that machinery identical across compared rows.*
 
-This README covers: [installation](#1-installation), [artifact-based replay of the paper's results](#3-reproducing-the-papers-results) (bit-exact for phase-1 discovery and monitoring-given-graph; near-exact for validated graphs — see §6), [artifacts requested in the reviews](#4-artifacts-requested-in-the-reviews), and the [repository layout](#5-repository-layout).
+This README covers: [installation](#1-installation), [artifact-based replay of the paper's results](#3-reproducing-the-papers-results) (bit-exact for phase-1 discovery and monitoring-given-graph; near-exact for validated graphs — see §6), [additional analyses](#4-additional-analyses), and the [repository layout](#5-repository-layout).
 
 ---
 
@@ -20,7 +22,7 @@ This README covers: [installation](#1-installation), [artifact-based replay of t
 Requirements: **Python 3.12+**, **Node.js 18+** (the simulators are JavaScript), ~4 GB disk.
 
 ```bash
-git clone <anonymized-repo-url>
+git clone https://github.com/taqiyaehsan/act-validate-adapt.git
 cd act-validate-adapt
 python3 -m venv causal_env && source causal_env/bin/activate
 pip install -r requirements.txt
@@ -30,7 +32,7 @@ npm install
 **OpenAI API key** (optional): replace the `YOUR_OPENAI_API_KEY` placeholder in `run_full_pipeline.py`
 (module-level `API_KEY`) with your key. The LLM is used in two places — hypothesis generation, and the
 third (domain-aware intermediate) intervention probe during validation; the first is served from the
-shipped response cache when present (`results/llm_edge_cache/`, see [§4](#4-artifacts-requested-in-the-reviews)),
+shipped response cache when present (`results/llm_edge_cache/`, see [§4](#4-additional-analyses)),
 and the second falls back to a deterministic midpoint intervention when no key is set, so the full
 pipeline runs API-free. Model and decoding: `gpt-3.5-turbo`; edge proposals are called at
 `temperature=1.0`, `top_p=0.8` (`src/generators.py`), and intervention-design calls use the
@@ -106,9 +108,9 @@ Gold-standard reference results used for the paper's tables are preserved unmodi
 
 ---
 
-## 4. Artifacts requested in the reviews
+## 4. Additional analyses
 
-Locations of the specific items raised in the reviews and meta-review.
+Where to find the ablations and robustness checks that go beyond the main tables.
 
 **Leave-one-generator-out ablation.**
 Rerun with the `--generators` flag, which restricts Phase 1 to a subset of `pc,sam,llm,varlingam` and writes to a suffixed directory so primary results are never overwritten:
@@ -116,7 +118,7 @@ Rerun with the `--generators` flag, which restricts Phase 1 to a subset of `pc,s
 ```bash
 python run_full_pipeline.py --sim smart_building_rich --seed-list 42,123,456 \
     --generators pc,sam,varlingam --out-suffix no_llm
-python scripts/c2_aggregate.py    # aggregates all configs into the response table
+python scripts/c2_aggregate.py    # aggregates all configs into one summary table
 ```
 
 Raw per-seed results for every configuration (`abl_full`, `no_pc`, `no_sam`, `no_llm`, `no_varlingam`, `pc_only`): `results/server_pull_jul23/smart_building_rich_*/` and `results/full_pipeline/open_window_*/`. Aggregated tables: `results/c2_analysis/`.
@@ -207,9 +209,15 @@ act-validate-adapt/
 
 ---
 
-## 6. Notes for reviewers
+## 6. Reproducibility notes
 
 - **Determinism, measured.** We verified the replay path end-to-end from a clean checkout of this repository, API-free, against a shipped run (`open_window` `no_sam`, seed 42). Phase 1 discovery is bit-exact (identical per-method candidate sets and scores). The validated graph reproduces 9 of 10 edges with no spurious additions; the single divergence is the one edge whose confirmatory interventions were LLM-designed in the original run and fall back to a deterministic probe without an API key (the LLM probes are stochastic at temperature 1.0, so validation is near-exact across any rerun — the shipped per-seed validated graphs are the exact artifacts of record). Monitoring rerun on the identical shipped graph (`--skip-discovery`) matches every reported metric exactly.
 - **Compute.** A full `smart_building_rich` seed (discovery + benchmarks + monitoring + policy) takes several hours on a laptop-class CPU; SAM is the dominant cost. `--stages` and `--experiments` subset the work. No GPU is required.
 - **Ground truth is never used for online decisions.** GT metrics are logged for evaluation only and GT-based early stopping is disabled. Regime labels (occupancy/window thresholds) are used at **commissioning** — they partition the training data used to fit the four regime-specific predictive models — and in evaluation metrics, but never in the online Bayesian updates, which see only prediction errors.
 - **Hardware credentials** in the physical code are placeholders (`YOUR_KASA_PASSWORD`, `YOUR_GOVEE_API_KEY`); the physical scripts require the corresponding devices and cannot run in simulation, but all collected data and results are included.
+
+---
+
+## License
+
+MIT. See [LICENSE](LICENSE).
