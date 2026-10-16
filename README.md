@@ -44,7 +44,6 @@ Sanity-check the environment before any long run:
 python preflight_check.py   # 68 diagnostic checks (simulators, data, dependencies)
 ```
 
-One known warning: preflight flags `data/ashrae_data_processed_scaling_params.csv` as missing. That file is read only by the monitoring/closed-loop stages, which do not apply to the ASHRAE environment (discovery-only, no actuator); the ASHRAE replication commands below run without it.
 
 ---
 
@@ -157,6 +156,22 @@ The gate that ran on hardware is `smart_room_physical/deployed/run_policygrid_di
 python scripts/physical_gate_oc.py   # Type-I / power of the deployed gate's per-edge stage (pre-FDR, conservative)
 ```
 
+**Simulation validation gate operating characteristics** (paper Appendix B, Tables on the gate's acceptance rate and on the number of trials K).
+Monte Carlo of the composite simulation gate (one-sample t-test, effect threshold, all-K sign consistency), 200,000 replicates per cell, seeded per (K, d):
+
+```bash
+python scripts/sim_gate_oc.py   # writes results/c2_analysis/sim_gate_oc.csv and sim_gate_oc_by_K.csv
+```
+
+**Cross-environment closed-loop replication** (paper Appendix E, validated vs. observation-only graph on `smart_room` and `smart_room_hidden_vars`, static policies).
+
+```bash
+python scripts/build_xenv_edge_sets.py --sim smart_room   # edge sets from the per-seed discovery results
+python runners/run_closedloop_xenv.py --sim smart_room
+```
+
+Released results: `results/closedloop_xenv/<sim>/` (`edge_sets.json`, `results.csv`, `paired_stats.txt`). The `smart_room` cell for seed 42, ε = 1.0 holds a 60-step smoke-test row (`n_steps = 60`) that the full run skipped on resume; the paper excludes it, leaving 49 paired cells.
+
 **Paired closed-loop statistics** (significance of the validated vs. obs-only gap).
 
 ```bash
@@ -195,7 +210,7 @@ act-validate-adapt/
 ├── js/                            # Simulators (smart_building_rich.js is primary)
 ├── benchmarks_new/                # 9 benchmark discovery methods
 ├── runners/                       # Standalone experiment runners (regime-vs-static, ablations, attribution)
-├── scripts/                       # Analysis: posthoc_analysis.py, c2_aggregate.py, physical_gate_oc.py
+├── scripts/                       # Analysis: posthoc_analysis.py, c2_aggregate.py, physical_gate_oc.py, sim_gate_oc.py
 ├── experiments/                   # Historical one-off experiments and notebooks
 ├── tests/                         # Test suite
 │

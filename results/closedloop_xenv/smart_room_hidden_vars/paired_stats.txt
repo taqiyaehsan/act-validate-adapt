@@ -1,0 +1,89 @@
+========================================================================
+CROSS-ENV CLOSEDLOOP — smart_room_hidden_vars — STATIC POLICY (NO MONITORING)
+========================================================================
+
+
+── ε = 0.5 ── (kWh total per episode)
+condition   Obs-Only     Random  Validated
+seed                                      
+42         32.752654  33.589382  29.952843
+123        32.751713  33.589382  29.953342
+456        32.752786  33.589382  29.953660
+789        32.753316  33.589382  29.952636
+999        32.751154  33.589382  29.954734
+
+  Validated vs Obs-Only (n=5 paired seeds):
+    Validated kWh: 29.953 ± 0.001
+    Obs-Only kWh:  32.752 ± 0.001
+    Mean Δ (Obs - Val): +2.799 kWh
+    Direction: 5/5 seeds favor Validated
+    Paired t=3866.21, p=0.0000
+    Wilcoxon W=0.0, p=0.0625
+
+── ε = 0.8 ── (kWh total per episode)
+condition   Obs-Only     Random  Validated
+seed                                      
+42         32.795352  33.583018  30.269444
+123        32.799286  33.583018  30.269511
+456        32.797808  33.583018  30.269995
+789        32.795124  33.583018  30.269708
+999        32.797050  33.583018  30.270486
+
+  Validated vs Obs-Only (n=5 paired seeds):
+    Validated kWh: 30.270 ± 0.000
+    Obs-Only kWh:  32.797 ± 0.002
+    Mean Δ (Obs - Val): +2.527 kWh
+    Direction: 5/5 seeds favor Validated
+    Paired t=3234.49, p=0.0000
+    Wilcoxon W=0.0, p=0.0625
+
+── ε = 1.0 ── (kWh total per episode)
+condition   Obs-Only     Random  Validated
+seed                                      
+42         32.831209  33.578779  30.488349
+123        32.832036  33.578779  30.488942
+456        32.829693  33.578779  30.488769
+789        32.827459  33.578779  30.486172
+999        32.829194  33.578779  30.487610
+
+  Validated vs Obs-Only (n=5 paired seeds):
+    Validated kWh: 30.488 ± 0.001
+    Obs-Only kWh:  32.830 ± 0.002
+    Mean Δ (Obs - Val): +2.342 kWh
+    Direction: 5/5 seeds favor Validated
+    Paired t=5398.38, p=0.0000
+    Wilcoxon W=0.0, p=0.0625
+
+── ε = 1.5 ── (kWh total per episode)
+condition   Obs-Only    Random  Validated
+seed                                     
+42         32.920637  33.56819  31.067041
+123        32.923083  33.56819  31.067763
+456        32.921241  33.56819  31.068202
+789        32.921812  33.56819  31.066787
+999        32.922014  33.56819  31.066063
+
+  Validated vs Obs-Only (n=5 paired seeds):
+    Validated kWh: 31.067 ± 0.001
+    Obs-Only kWh:  32.922 ± 0.001
+    Mean Δ (Obs - Val): +1.855 kWh
+    Direction: 5/5 seeds favor Validated
+    Paired t=3394.94, p=0.0000
+    Wilcoxon W=0.0, p=0.0625
+
+── ε = 2.0 ── (kWh total per episode)
+condition   Obs-Only     Random  Validated
+seed                                      
+42         33.030179  33.557617  31.696799
+123        33.028888  33.557617  31.697373
+456        33.030854  33.557617  31.697224
+789        33.031674  33.557617  31.697462
+999        33.029593  33.557617  31.697613
+
+  Validated vs Obs-Only (n=5 paired seeds):
+    Validated kWh: 31.697 ± 0.000
+    Obs-Only kWh:  33.030 ± 0.001
+    Mean Δ (Obs - Val): +1.333 kWh
+    Direction: 5/5 seeds favor Validated
+    Paired t=2603.66, p=0.0000
+    Wilcoxon W=0.0, p=0.0625
