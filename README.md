@@ -4,6 +4,8 @@ Code and results for our NeurIPS 2026 paper.
 
 Taqiya Ehsan, Shuren Xia, Jorge Ortiz (Rutgers University)
 
+Project page: https://ortiz.rutgers.edu/projects/policygrid/
+
 The framework (called **PolicyGRID** in the paper) treats control actions as experiments: it generates candidate causal edges from observational data (PC + SAM + LLM + VARLiNGAM), validates each edge through do-operator interventions in the environment, rescues non-intervenable edges via back-door-adjusted partial correlation, monitors latent regime changes with factored Bayesian monitors (the monitor distinguishes among known coefficient regimes on the fixed validated graph; it does not detect structural/topology change), and drives multi-objective Pareto control from the validated structural equation model. The same pipeline is deployed on a physical sensor/actuator testbed.
 
 | Paper variant | Graph | Policy |
@@ -232,6 +234,18 @@ act-validate-adapt/
 - **Hardware credentials** in the physical code are placeholders (`YOUR_KASA_PASSWORD`, `YOUR_GOVEE_API_KEY`); the physical scripts require the corresponding devices and cannot run in simulation, but all collected data and results are included.
 
 ---
+
+## Citation
+
+```bibtex
+@inproceedings{ehsan2026actvalidateadapt,
+  title     = {Act, Validate, Adapt: Closing the Causal
+               Discovery-Control Loop},
+  author    = {Ehsan, Taqiya and Xia, Shuren and Ortiz, Jorge},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026}
+}
+```
 
 ## License
 
